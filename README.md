@@ -5,8 +5,30 @@ Landing pública estática para `minutofinancieros.com`, pensada para Cloudflare
 ## Estructura
 
 - `/`: landing principal.
+- `/links/`: hub de enlaces para bios de redes sociales.
+- `/recursos/`: recursos y herramientas, alimentados desde `data/recursos.json`.
+- `/blog/`: índice de artículos cortos.
+- `/blog/5-errores-comunes-al-ahorrar/`: artículo de ejemplo.
+- `/blog/regla-50-30-20/`: artículo de ejemplo.
+- `/sobre/`: descripción del proyecto.
 - `/terminos/`: Términos de Servicio.
 - `/privacidad/`: Política de Privacidad.
+
+## Recursos afiliados
+
+Los recursos de `/recursos/` se editan en `data/recursos.json`. Cada ítem usa esta forma:
+
+```json
+{
+  "nombre": "Nombre del recurso",
+  "descripcion": "Descripción corta",
+  "imagen": "",
+  "link_afiliado": "https://www.amazon.com/dp/PRODUCTO?tag=minutofinanci-20",
+  "categoria": "Categoría"
+}
+```
+
+Los productos actuales son placeholders. Antes de publicar recomendaciones reales, reemplazar los ASIN `PLACEHOLDER` y confirmar el marketplace de Amazon más adecuado para la audiencia.
 
 ## Deploy en Cloudflare Pages
 

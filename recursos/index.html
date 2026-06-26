@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recursos y herramientas | Minuto Financieros</title>
+    <meta name="description" content="Recursos, libros y herramientas de finanzas personales mencionados por Minuto Financieros.">
+    <meta property="og:title" content="Recursos y herramientas | Minuto Financieros">
+    <meta property="og:description" content="Libros, herramientas y productos útiles para aprender finanzas personales.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://minutofinancieros.com/recursos/">
+    <meta property="og:image" content="https://minutofinancieros.com/assets/social-minuto-financieros.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Recursos y herramientas | Minuto Financieros">
+    <meta name="twitter:description" content="Libros, herramientas y productos útiles para aprender finanzas personales.">
+    <meta name="twitter:image" content="https://minutofinancieros.com/assets/social-minuto-financieros.png">
+    <link rel="icon" href="/assets/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="/assets/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/favicon-192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Minuto Financieros inicio">
+        <img class="brand-mark" src="/assets/logo-minuto-financieros.png" width="44" height="44" alt="" aria-hidden="true">
+        <span>Minuto Financieros</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="/">Inicio</a>
+        <a href="/links/">Links</a>
+        <a href="/recursos/">Recursos</a>
+        <a href="/blog/">Blog</a>
+        <a href="/sobre/">Sobre</a>
+        <a href="/terminos/">Términos de Servicio</a>
+        <a href="/privacidad/">Política de Privacidad</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero compact-hero">
+        <p class="eyebrow">Recursos</p>
+        <h1>Herramientas para aprender y ordenar tus finanzas</h1>
+        <p class="page-lead">Esta página reúne recursos mencionados en videos y guías. Los productos actuales son placeholders editoriales para validar la estructura antes de cargar recomendaciones reales.</p>
+      </section>
+
+      <section class="section" aria-labelledby="recursos-lista">
+        <div class="section-kicker">Lista editable</div>
+        <h2 id="recursos-lista">Recursos destacados</h2>
+        <div id="resources-grid" class="resource-grid"></div>
+        <p class="affiliate-note">Transparencia: algunos enlaces pueden ser de afiliado. Si comprás desde esos links, Minuto Financieros puede recibir una comisión sin costo adicional para vos.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">© 2026 Minuto Financieros</div>
+      <a href="mailto:minutofinanciero2025@gmail.com">minutofinanciero2025@gmail.com</a>
+      <nav aria-label="Enlaces legales">
+        <a href="/">Inicio</a>
+        <a href="/terminos/">Términos de Servicio</a>
+        <a href="/privacidad/">Política de Privacidad</a>
+      </nav>
+    </footer>
+
+    <script>
+      fetch("/data/recursos.json")
+        .then((response) => response.json())
+        .then((recursos) => {
+          document.getElementById("resources-grid").innerHTML = recursos.map((item) => `
+            <article class="resource-card">
+              <div class="resource-image" aria-hidden="true">${item.imagen ? `<img src="${item.imagen}" alt="">` : "$"}</div>
+              <div class="resource-body">
+                <span class="resource-category">${item.categoria}</span>
+                <h3>${item.nombre}</h3>
+                <p>${item.descripcion}</p>
+                <a class="button button-primary" href="${item.link_afiliado}" target="_blank" rel="sponsored noopener">Ver recurso</a>
+              </div>
+            </article>
+          `).join("");
+        })
+        .catch(() => {
+          document.getElementById("resources-grid").innerHTML = "<p>No se pudieron cargar los recursos por el momento.</p>";
+        });
+    </script>
+  </body>
+</html>

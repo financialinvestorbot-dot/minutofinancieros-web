@@ -1,0 +1,30 @@
+[
+  {
+    "nombre": "Libro de finanzas personales para principiantes",
+    "descripcion": "Una lectura introductoria para ordenar ingresos, gastos, ahorro e inversión desde cero.",
+    "imagen": "",
+    "link_afiliado": "https://www.amazon.com/dp/PLACEHOLDER1?tag=minutofinanci-20",
+    "categoria": "Libros"
+  },
+  {
+    "nombre": "Calculadora financiera básica",
+    "descripcion": "Herramienta útil para practicar interés compuesto, cuotas, porcentajes y comparaciones simples.",
+    "imagen": "",
+    "link_afiliado": "https://www.amazon.com/dp/PLACEHOLDER2?tag=minutofinanci-20",
+    "categoria": "Herramientas"
+  },
+  {
+    "nombre": "Cuaderno para presupuesto mensual",
+    "descripcion": "Un soporte simple para registrar gastos, metas de ahorro y seguimiento de hábitos.",
+    "imagen": "",
+    "link_afiliado": "https://www.amazon.com/dp/PLACEHOLDER3?tag=minutofinanci-20",
+    "categoria": "Organización"
+  },
+  {
+    "nombre": "Libro sobre inversión indexada",
+    "descripcion": "Material inicial para entender diversificación, largo plazo y costos antes de invertir.",
+    "imagen": "",
+    "link_afiliado": "https://www.amazon.com/dp/PLACEHOLDER4?tag=minutofinanci-20",
+    "categoria": "Inversión"
+  }
+]
