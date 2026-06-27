@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="/assets/styles.css">
     <script src="/assets/site-config.js" defer></script>
     <script src="/assets/analytics.js" defer></script>
+    <script src="/assets/newsletter.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -37,8 +38,8 @@
         <a href="/recursos/">Recursos</a>
         <a href="/blog/">Blog</a>
         <a href="/sobre/">Sobre</a>
-        <a href="/terminos/">Términos de Servicio</a>
-        <a href="/privacidad/">Política de Privacidad</a>
+          <a href="/terminos/">Términos de Servicio</a>
+          <a href="/privacidad/">Política de Privacidad</a>
       </nav>
     </header>
 
@@ -54,6 +55,7 @@
         <ul>
           <li>Información pública de interacción: comentarios, mensajes directos o likes que los usuarios realizan en nuestras publicaciones.</li>
           <li>Información de contacto: si un usuario nos escribe voluntariamente por correo electrónico o mensaje directo.</li>
+          <li>Newsletter: si el formulario de suscripción se conecta a un proveedor externo en el futuro, recopilaremos el correo electrónico enviado voluntariamente para enviar contenido educativo y novedades del proyecto.</li>
           <li>Datos de uso de API: cuando utilizamos integraciones oficiales con plataformas como Meta o TikTok para gestionar nuestras propias cuentas, solo accedemos a los datos necesarios para publicar y administrar contenido en dichas cuentas oficiales.</li>
         </ul>
 
@@ -61,6 +63,7 @@
         <p>Utilizamos la información recopilada únicamente para:</p>
         <ul>
           <li>Responder consultas de usuarios.</li>
+          <li>Enviar newsletters o comunicaciones educativas si el usuario se suscribe voluntariamente.</li>
           <li>Mejorar la calidad de nuestro contenido.</li>
           <li>Gestionar y publicar contenido en nuestras propias cuentas de redes sociales.</li>
         </ul>
@@ -89,13 +92,25 @@
     </main>
 
     <footer class="site-footer">
-      <div class="footer-brand">© 2026 Minuto Financieros</div>
-      <a href="mailto:minutofinanciero2025@gmail.com">minutofinanciero2025@gmail.com</a>
-      <nav aria-label="Enlaces legales">
-        <a href="/">Inicio</a>
-        <a href="/terminos/">Términos de Servicio</a>
-        <a href="/privacidad/">Política de Privacidad</a>
-      </nav>
+      <div class="footer-meta">
+        <div class="footer-brand">© 2026 Minuto Financieros</div>
+        <a href="mailto:minutofinanciero2025@gmail.com">minutofinanciero2025@gmail.com</a>
+        <nav aria-label="Enlaces legales">
+          <a href="/">Inicio</a>
+          <a href="/terminos/">Términos de Servicio</a>
+          <a href="/privacidad/">Política de Privacidad</a>
+        </nav>
+      </div>
+      <section class="newsletter-box" aria-labelledby="newsletter-title">
+        <h2 id="newsletter-title">Recibí un tip financiero por semana</h2>
+        <p>Ideas breves para ahorrar, ordenar gastos e invertir con más criterio.</p>
+        <form class="newsletter-form" data-newsletter-form novalidate>
+          <label class="sr-only" for="newsletter-email">Correo electrónico</label>
+          <input id="newsletter-email" type="email" name="email" placeholder="tu@email.com" autocomplete="email" required>
+          <button type="submit">Anotarme</button>
+        </form>
+        <div class="newsletter-status" data-newsletter-status aria-live="polite"></div>
+      </section>
     </footer>
   </body>
 </html>

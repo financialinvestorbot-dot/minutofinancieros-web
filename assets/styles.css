@@ -46,6 +46,18 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -321,14 +333,21 @@ h1 {
 }
 
 .site-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: minmax(260px, 1.2fr) minmax(280px, 0.8fr);
+  align-items: start;
+  gap: 22px 32px;
   flex-wrap: wrap;
   padding: 28px clamp(18px, 5vw, 72px);
   color: var(--white);
   background: var(--navy-950);
+}
+
+.footer-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .site-footer nav {
@@ -340,6 +359,69 @@ h1 {
 
 .footer-brand {
   font-weight: 800;
+}
+
+.newsletter-box {
+  width: 100%;
+  max-width: 520px;
+  justify-self: end;
+}
+
+.newsletter-box h2 {
+  margin-bottom: 6px;
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.newsletter-box p {
+  margin-bottom: 12px;
+  color: #d6e5f8;
+  font-size: 0.92rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 8px;
+}
+
+.newsletter-form input {
+  min-width: 0;
+  flex: 1 1 auto;
+  min-height: 46px;
+  padding: 10px 12px;
+  color: var(--ink);
+  background: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 8px;
+  font: inherit;
+}
+
+.newsletter-form button {
+  min-height: 46px;
+  padding: 10px 14px;
+  color: var(--navy-950);
+  background: var(--gold-400);
+  border: 1px solid var(--gold-400);
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.newsletter-status {
+  min-height: 22px;
+  margin-top: 8px;
+  color: #d6e5f8;
+  font-size: 0.84rem;
+}
+
+.newsletter-status[data-state="error"] {
+  color: #ffd0d0;
+}
+
+.newsletter-status[data-state="success"] {
+  color: var(--mint-300);
 }
 
 .legal-page {
@@ -686,6 +768,14 @@ h1 {
   .story-section {
     grid-template-columns: 1fr;
   }
+
+  .site-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-box {
+    justify-self: stretch;
+  }
 }
 
 @media (max-width: 520px) {
@@ -709,5 +799,13 @@ h1 {
 
   .legal-content {
     padding: 22px 18px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form button {
+    width: 100%;
   }
 }

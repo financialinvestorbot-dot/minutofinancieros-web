@@ -47,3 +47,14 @@ Cuando `/recursos/` tenga productos reales, comparar:
 - Conversiones reportadas por Amazon Associates.
 
 Eso permitirá estimar si los videos convierten mejor enviando directo a Amazon o pasando primero por una página propia.
+
+## Newsletter
+
+El formulario del footer está documentado en `docs/newsletter.md`.
+
+Estado actual:
+
+- valida emails en frontend;
+- no guarda datos;
+- no envía datos a terceros;
+- queda listo para reemplazar la lógica de `assets/newsletter.js` cuando se elija proveedor.

@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="/assets/styles.css">
     <script src="/assets/site-config.js" defer></script>
     <script src="/assets/analytics.js" defer></script>
+    <script src="/assets/newsletter.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -37,8 +38,8 @@
         <a href="/recursos/">Recursos</a>
         <a href="/blog/">Blog</a>
         <a href="/sobre/">Sobre</a>
-        <a href="/terminos/">Términos de Servicio</a>
-        <a href="/privacidad/">Política de Privacidad</a>
+          <a href="/terminos/">Términos de Servicio</a>
+          <a href="/privacidad/">Política de Privacidad</a>
       </nav>
     </header>
 
@@ -66,13 +67,25 @@
     </main>
 
     <footer class="site-footer">
-      <div class="footer-brand">© 2026 Minuto Financieros</div>
-      <a href="mailto:minutofinanciero2025@gmail.com">minutofinanciero2025@gmail.com</a>
-      <nav aria-label="Enlaces legales">
-        <a href="/">Inicio</a>
-        <a href="/terminos/">Términos de Servicio</a>
-        <a href="/privacidad/">Política de Privacidad</a>
-      </nav>
+      <div class="footer-meta">
+        <div class="footer-brand">© 2026 Minuto Financieros</div>
+        <a href="mailto:minutofinanciero2025@gmail.com">minutofinanciero2025@gmail.com</a>
+        <nav aria-label="Enlaces legales">
+          <a href="/">Inicio</a>
+          <a href="/terminos/">Términos de Servicio</a>
+          <a href="/privacidad/">Política de Privacidad</a>
+        </nav>
+      </div>
+      <section class="newsletter-box" aria-labelledby="newsletter-title">
+        <h2 id="newsletter-title">Recibí un tip financiero por semana</h2>
+        <p>Ideas breves para ahorrar, ordenar gastos e invertir con más criterio.</p>
+        <form class="newsletter-form" data-newsletter-form novalidate>
+          <label class="sr-only" for="newsletter-email">Correo electrónico</label>
+          <input id="newsletter-email" type="email" name="email" placeholder="tu@email.com" autocomplete="email" required>
+          <button type="submit">Anotarme</button>
+        </form>
+        <div class="newsletter-status" data-newsletter-status aria-live="polite"></div>
+      </section>
     </footer>
   </body>
 </html>
