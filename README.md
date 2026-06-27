@@ -13,6 +13,15 @@ Landing pública estática para `minutofinancieros.com`, pensada para Cloudflare
 - `/sobre/`: descripción del proyecto.
 - `/terminos/`: Términos de Servicio.
 - `/privacidad/`: Política de Privacidad.
+- `/videos/`: carpeta reservada para pruebas con `.mp4` pequeños; ver `docs/video-hosting.md`.
+
+## Marketing y analytics
+
+Ver `README-marketing.md` para activar Google Analytics 4 y usar URLs con UTM por plataforma.
+
+## Videos
+
+Ver `docs/video-hosting.md` para la evaluación de Cloudflare Pages vs Cloudflare R2. La recomendación para producción es R2 con dominio público.
 
 ## Recursos afiliados
 
