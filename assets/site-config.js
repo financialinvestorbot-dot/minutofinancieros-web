@@ -1,3 +1,3 @@
 window.MinutoFinancierosConfig = {
-  gaMeasurementId: ""
+  gaMeasurementId: "G-4FQBKPVL8M"
 };

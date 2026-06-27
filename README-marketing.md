@@ -8,11 +8,16 @@ Para activarlo, editar `assets/site-config.js` y completar:
 
 ```js
 window.MinutoFinancierosConfig = {
-  gaMeasurementId: "G-XXXXXXXXXX"
+  gaMeasurementId: "G-4FQBKPVL8M"
 };
 ```
 
-El Measurement ID de GA4 empieza con `G-`. Se obtiene en Google Analytics desde Admin > Data streams > Web stream.
+El Measurement ID de GA4 empieza con `G-`. El flujo configurado para este sitio es:
+
+- Nombre del flujo: `minutofinancieros.com`
+- URL del flujo: `https://minutofinancieros.com`
+- ID del flujo: `15162607085`
+- ID de medición: `G-4FQBKPVL8M`
 
 Referencia oficial de configuración: https://support.google.com/analytics/answer/9304153
 
