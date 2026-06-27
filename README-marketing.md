@@ -1,10 +1,23 @@
 # Marketing, Analytics y UTMs
 
-## Analytics
+Documento operativo para medicion, fuentes de trafico, afiliados y newsletter de Minuto Financieros.
 
-El sitio incluye un cargador liviano de Google Analytics 4. Por defecto está desactivado.
+## Google Analytics 4
 
-Para activarlo, editar `assets/site-config.js` y completar:
+GA4 esta activo mediante el cargador propio del sitio:
+
+- Configuracion: `assets/site-config.js`
+- Loader: `assets/analytics.js`
+- Measurement ID: `G-4FQBKPVL8M`
+
+Flujo GA4 configurado:
+
+- Nombre del flujo: `minutofinancieros.com`
+- URL del flujo: `https://minutofinancieros.com`
+- ID del flujo: `15162607085`
+- ID de medicion: `G-4FQBKPVL8M`
+
+El config actual es:
 
 ```js
 window.MinutoFinancierosConfig = {
@@ -12,20 +25,30 @@ window.MinutoFinancierosConfig = {
 };
 ```
 
-El Measurement ID de GA4 empieza con `G-`. El flujo configurado para este sitio es:
+Referencia oficial: https://support.google.com/analytics/answer/9304153
 
-- Nombre del flujo: `minutofinancieros.com`
-- URL del flujo: `https://minutofinancieros.com`
-- ID del flujo: `15162607085`
-- ID de medición: `G-4FQBKPVL8M`
+## Cache de config
 
-Referencia oficial de configuración: https://support.google.com/analytics/answer/9304153
+`assets/site-config.js` no debe tener cache largo, porque ahi vive el Measurement ID.
 
-Si más adelante se decide migrar a Plausible, Umami u otra herramienta, se puede eliminar `assets/analytics.js`, `assets/site-config.js` y las dos etiquetas `<script>` incluidas en las páginas.
+En `_headers` existe una regla especifica:
+
+```text
+/assets/site-config.js
+  Cache-Control: public, max-age=300
+```
+
+Las paginas cargan el config asi:
+
+```html
+<script src="/assets/site-config.js?v=ga4-20260627" defer></script>
+```
+
+Si cambia el config en el futuro, actualizar tambien el query `v=...` para forzar refresh.
 
 ## URLs recomendadas con UTM
 
-Usar estas URLs en bios y descripciones para distinguir el origen del tráfico:
+Usar estas URLs en bios y descripciones para distinguir el origen del trafico:
 
 ```text
 Instagram bio:
@@ -34,32 +57,66 @@ https://minutofinancieros.com/links/?utm_source=instagram&utm_medium=bio
 TikTok bio:
 https://minutofinancieros.com/links/?utm_source=tiktok&utm_medium=bio
 
-YouTube descripción:
+YouTube descripcion:
 https://minutofinancieros.com/links/?utm_source=youtube&utm_medium=description
 
 YouTube canal:
 https://minutofinancieros.com/links/?utm_source=youtube&utm_medium=channel
 ```
 
-Los parámetros UTM no requieren código especial en este sitio. Las rutas son estáticas y funcionan igual con o sin query string.
+Los parametros UTM no requieren codigo especial. Las rutas son estaticas y funcionan igual con o sin query string.
+
+## Recursos afiliados
+
+Pagina: `/recursos/`
+
+Datos: `data/recursos.json`
+
+Tag Amazon configurado para placeholders:
+
+```text
+minutofinanci-20
+```
+
+Antes de usar productos reales:
+
+- reemplazar los ASIN placeholder;
+- confirmar marketplace correcto;
+- verificar que cada URL incluya el tag de afiliado;
+- mantener el disclaimer visible en `/recursos/`.
 
 ## Seguimiento futuro de afiliados
 
 Cuando `/recursos/` tenga productos reales, comparar:
 
-- Tráfico a `/recursos/` desde GA4.
-- Clicks por fuente UTM.
-- Conversiones reportadas por Amazon Associates.
+- trafico a `/recursos/` desde GA4;
+- fuente/medio via UTM;
+- clicks hacia Amazon;
+- conversiones reportadas por Amazon Associates.
 
-Eso permitirá estimar si los videos convierten mejor enviando directo a Amazon o pasando primero por una página propia.
+Objetivo: estimar si conviene enviar trafico directo a Amazon o primero a una pagina propia.
 
 ## Newsletter
 
-El formulario del footer está documentado en `docs/newsletter.md`.
+El formulario del footer esta documentado en `docs/newsletter.md`.
 
 Estado actual:
 
 - valida emails en frontend;
 - no guarda datos;
-- no envía datos a terceros;
-- queda listo para reemplazar la lógica de `assets/newsletter.js` cuando se elija proveedor.
+- no envia datos a terceros;
+- queda listo para reemplazar la logica de `assets/newsletter.js` cuando se elija proveedor.
+
+Proveedor recomendado para empezar: MailerLite.
+
+Alternativas:
+
+- Brevo.
+- Kit.
+
+## Checklist despues de publicar cambios de marketing
+
+- Verificar `https://minutofinancieros.com/`.
+- Verificar `https://minutofinancieros.com/links/?utm_source=instagram&utm_medium=bio`.
+- Verificar `https://minutofinancieros.com/assets/site-config.js?v=ga4-20260627`.
+- Confirmar en GA4 Realtime que aparece una visita de prueba.
