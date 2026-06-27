@@ -72,6 +72,15 @@ Pagina: `/recursos/`
 
 Datos: `data/recursos.json`
 
+Imagenes: `assets/recursos/`
+
+Las imagenes actuales de recursos fueron tomadas de Wikimedia Commons, con licencia CC0, y optimizadas localmente para las cards:
+
+- `recurso-libros.jpg`: Laptop and books (Unsplash), Kari Shea.
+- `recurso-calculadora.jpg`: Financial Calculator Hewlett-Packard HP-12C, Pittigrilli.
+- `recurso-presupuesto.jpg`: Desktop with laptop and calculator (Unsplash).
+- `recurso-inversion.jpg`: Luke Chesser / Unsplash data visualization.
+
 Tag Amazon configurado para placeholders:
 
 ```text

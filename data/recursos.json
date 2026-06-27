@@ -2,28 +2,32 @@
   {
     "nombre": "Libro de finanzas personales para principiantes",
     "descripcion": "Una lectura introductoria para ordenar ingresos, gastos, ahorro e inversión desde cero.",
-    "imagen": "",
+    "imagen": "/assets/recursos/recurso-libros.jpg",
+    "imagen_alt": "Escritorio con laptop y libros apilados",
     "link_afiliado": "https://www.amazon.com/dp/PLACEHOLDER1?tag=minutofinanci-20",
     "categoria": "Libros"
   },
   {
     "nombre": "Calculadora financiera básica",
     "descripcion": "Herramienta útil para practicar interés compuesto, cuotas, porcentajes y comparaciones simples.",
-    "imagen": "",
+    "imagen": "/assets/recursos/recurso-calculadora.jpg",
+    "imagen_alt": "Calculadora financiera HP sobre fondo claro",
     "link_afiliado": "https://www.amazon.com/dp/PLACEHOLDER2?tag=minutofinanci-20",
     "categoria": "Herramientas"
   },
   {
     "nombre": "Cuaderno para presupuesto mensual",
     "descripcion": "Un soporte simple para registrar gastos, metas de ahorro y seguimiento de hábitos.",
-    "imagen": "",
+    "imagen": "/assets/recursos/recurso-presupuesto.jpg",
+    "imagen_alt": "Notebook abierto con calculadora y lapicera en un escritorio",
     "link_afiliado": "https://www.amazon.com/dp/PLACEHOLDER3?tag=minutofinanci-20",
     "categoria": "Organización"
   },
   {
     "nombre": "Libro sobre inversión indexada",
     "descripcion": "Material inicial para entender diversificación, largo plazo y costos antes de invertir.",
-    "imagen": "",
+    "imagen": "/assets/recursos/recurso-inversion.jpg",
+    "imagen_alt": "Pantalla con gráficos y visualizaciones de datos financieros",
     "link_afiliado": "https://www.amazon.com/dp/PLACEHOLDER4?tag=minutofinanci-20",
     "categoria": "Inversión"
   }

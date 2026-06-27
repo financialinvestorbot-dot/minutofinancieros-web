@@ -86,7 +86,7 @@
         .then((recursos) => {
           document.getElementById("resources-grid").innerHTML = recursos.map((item) => `
             <article class="resource-card">
-              <div class="resource-image" aria-hidden="true">${item.imagen ? `<img src="${item.imagen}" alt="">` : "$"}</div>
+              <div class="resource-image">${item.imagen ? `<img src="${item.imagen}" alt="${item.imagen_alt || item.nombre}" loading="lazy">` : `<span aria-hidden="true">$</span>`}</div>
               <div class="resource-body">
                 <span class="resource-category">${item.categoria}</span>
                 <h3>${item.nombre}</h3>
