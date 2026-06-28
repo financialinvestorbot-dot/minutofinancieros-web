@@ -6,6 +6,9 @@
 /assets/site-config.js
   Cache-Control: public, max-age=300
 
+/assets/newsletter.js
+  Cache-Control: public, max-age=300
+
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
