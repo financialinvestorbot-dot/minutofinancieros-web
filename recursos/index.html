@@ -81,7 +81,7 @@
     </footer>
 
     <script>
-      fetch("/data/recursos.json")
+      fetch("/data/recursos.json?v=real-products-20260627")
         .then((response) => response.json())
         .then((recursos) => {
           document.getElementById("resources-grid").innerHTML = recursos.map((item) => `
