@@ -127,16 +127,23 @@ El formulario del footer esta documentado en `docs/newsletter.md`.
 Estado actual:
 
 - valida emails en frontend;
-- no guarda datos;
-- no envia datos a terceros;
-- queda listo para reemplazar la logica de `assets/newsletter.js` cuando se elija proveedor.
+- envia la suscripcion a `/api/newsletter`;
+- usa una Cloudflare Pages Function para llamar a Brevo sin exponer la API key;
+- usa double opt-in mediante Brevo;
+- requiere variables de entorno en Cloudflare Pages.
 
-Proveedor recomendado para empezar: MailerLite.
+Proveedor elegido: Brevo.
 
-Alternativas:
+Variables necesarias:
 
-- Brevo.
-- Kit.
+```text
+BREVO_API_KEY=
+BREVO_LIST_ID=
+BREVO_DOI_TEMPLATE_ID=
+NEWSLETTER_REDIRECT_URL=https://minutofinancieros.com/?newsletter=confirmed
+```
+
+Detalles completos: `docs/newsletter.md`.
 
 ## Checklist despues de publicar cambios de marketing
 
