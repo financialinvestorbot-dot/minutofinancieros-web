@@ -81,18 +81,33 @@ Las imagenes actuales de recursos fueron tomadas de Wikimedia Commons, con licen
 - `recurso-presupuesto.jpg`: Desktop with laptop and calculator (Unsplash).
 - `recurso-inversion.jpg`: Luke Chesser / Unsplash data visualization.
 
-Tag Amazon configurado para placeholders:
+Tag Amazon configurado:
 
 ```text
 minutofinanci-20
 ```
 
-Antes de usar productos reales:
+La primera curaduria real de `/recursos/` incluye libros y herramientas para:
 
-- reemplazar los ASIN placeholder;
-- confirmar marketplace correcto;
-- verificar que cada URL incluya el tag de afiliado;
-- mantener el disclaimer visible en `/recursos/`.
+- finanzas personales;
+- ahorro y habitos;
+- presupuesto;
+- inversion basica e indexada;
+- herramientas de calculo financiero.
+
+Cada URL debe mantener `tag=minutofinanci-20`.
+
+Los clicks en recursos de Amazon disparan el evento GA4:
+
+```text
+affiliate_click
+```
+
+Parametros enviados:
+
+- `resource_name`
+- `resource_category`
+- `outbound_url`
 
 ## Seguimiento futuro de afiliados
 

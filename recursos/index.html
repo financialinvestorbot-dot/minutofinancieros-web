@@ -47,7 +47,7 @@
       <section class="page-hero compact-hero">
         <p class="eyebrow">Recursos</p>
         <h1>Herramientas para aprender y ordenar tus finanzas</h1>
-        <p class="page-lead">Esta página reúne recursos mencionados en videos y guías. Los productos actuales son placeholders editoriales para validar la estructura antes de cargar recomendaciones reales.</p>
+        <p class="page-lead">Esta página reúne libros y herramientas útiles para profundizar temas de ahorro, presupuesto, hábitos e inversión básica mencionados en el canal.</p>
       </section>
 
       <section class="section" aria-labelledby="recursos-lista">
@@ -91,7 +91,7 @@
                 <span class="resource-category">${item.categoria}</span>
                 <h3>${item.nombre}</h3>
                 <p>${item.descripcion}</p>
-                <a class="button button-primary" href="${item.link_afiliado}" target="_blank" rel="sponsored noopener">Ver recurso</a>
+                <a class="button button-primary" href="${item.link_afiliado}" target="_blank" rel="sponsored noopener" data-affiliate-link data-resource-name="${item.nombre}" data-resource-category="${item.categoria}">Ver recurso</a>
               </div>
             </article>
           `).join("");

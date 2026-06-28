@@ -18,4 +18,20 @@
 
   window.gtag("js", new Date());
   window.gtag("config", measurementId);
+
+  document.addEventListener("click", function (event) {
+    var link = event.target.closest("[data-affiliate-link]");
+
+    if (!link || typeof window.gtag !== "function") {
+      return;
+    }
+
+    window.gtag("event", "affiliate_click", {
+      event_category: "affiliate",
+      event_label: link.dataset.resourceName || link.href,
+      resource_name: link.dataset.resourceName || "",
+      resource_category: link.dataset.resourceCategory || "",
+      outbound_url: link.href
+    });
+  });
 })();
