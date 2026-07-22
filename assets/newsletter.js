@@ -20,6 +20,12 @@
         return;
       }
 
+      if (typeof window.MinutoFinancierosTrack === "function") {
+        window.MinutoFinancierosTrack("newsletter_submit", {
+          form_location: form.dataset.newsletterLocation || "footer"
+        });
+      }
+
       status.textContent = "Enviando solicitud...";
       status.dataset.state = "";
 
@@ -49,9 +55,22 @@
         status.textContent = data.message || "Listo. Revisá tu correo para confirmar la suscripción.";
         status.dataset.state = "success";
         form.reset();
+
+        if (typeof window.MinutoFinancierosTrack === "function") {
+          window.MinutoFinancierosTrack("newsletter_success", {
+            form_location: form.dataset.newsletterLocation || "footer"
+          });
+        }
       } catch (error) {
         status.textContent = error.message || "No pudimos registrar tu email. Probá de nuevo en unos minutos.";
         status.dataset.state = "error";
+
+        if (typeof window.MinutoFinancierosTrack === "function") {
+          window.MinutoFinancierosTrack("newsletter_error", {
+            form_location: form.dataset.newsletterLocation || "footer",
+            error_message: status.textContent
+          });
+        }
       } finally {
         if (submitButton) {
           submitButton.disabled = false;

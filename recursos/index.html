@@ -51,8 +51,9 @@
       </section>
 
       <section class="section" aria-labelledby="recursos-lista">
-        <div class="section-kicker">Lista editable</div>
+        <div class="section-kicker">Curaduría práctica</div>
         <h2 id="recursos-lista">Recursos destacados</h2>
+        <p class="section-lead">Empezá por el bloque que coincida con tu momento actual. Cada clic hacia Amazon queda medido para comparar qué recomendaciones realmente ayudan a la audiencia.</p>
         <div id="resources-grid" class="resource-grid"></div>
         <p class="affiliate-note">Transparencia: algunos enlaces pueden ser de afiliado. Si comprás desde esos links, Minuto Financieros puede recibir una comisión sin costo adicional para vos.</p>
       </section>
@@ -81,20 +82,42 @@
     </footer>
 
     <script>
-      fetch("/data/recursos.json?v=spanish-resources-20260722")
+      fetch("/data/recursos.json?v=resource-funnel-20260722")
         .then((response) => response.json())
         .then((recursos) => {
-          document.getElementById("resources-grid").innerHTML = recursos.map((item) => `
-            <article class="resource-card">
-              <div class="resource-image">${item.imagen ? `<img src="${item.imagen}" alt="${item.imagen_alt || item.nombre}" loading="lazy">` : `<span aria-hidden="true">$</span>`}</div>
-              <div class="resource-body">
-                <span class="resource-category">${item.categoria}</span>
-                <h3>${item.nombre}</h3>
-                <p>${item.descripcion}</p>
-                <a class="button button-primary" href="${item.link_afiliado}" target="_blank" rel="sponsored noopener" data-affiliate-link data-resource-name="${item.nombre}" data-resource-category="${item.categoria}">Ver recurso</a>
-              </div>
-            </article>
-          `).join("");
+          const etapas = ["Para empezar", "Para ordenar", "Para invertir"];
+          const ordenados = recursos.slice().sort((a, b) => (a.prioridad || 99) - (b.prioridad || 99));
+
+          document.getElementById("resources-grid").innerHTML = etapas.map((etapa) => {
+            const items = ordenados.filter((item) => item.etapa === etapa);
+
+            if (!items.length) {
+              return "";
+            }
+
+            return `
+              <section class="resource-stage" aria-label="${etapa}">
+                <h3>${etapa}</h3>
+                <div class="resource-stage-grid">
+                  ${items.map((item) => `
+                    <article class="resource-card">
+                      <div class="resource-image">${item.imagen ? `<img src="${item.imagen}" alt="${item.imagen_alt || item.nombre}" loading="lazy">` : `<span aria-hidden="true">$</span>`}</div>
+                      <div class="resource-body">
+                        <span class="resource-category">${item.categoria}</span>
+                        <h3>${item.nombre}</h3>
+                        <p>${item.descripcion}</p>
+                        ${item.ideal_para ? `<p class="resource-fit"><strong>Ideal para:</strong> ${item.ideal_para}</p>` : ""}
+                        <div class="resource-actions">
+                          <a class="button button-primary" href="${item.link_afiliado}" target="_blank" rel="sponsored noopener" data-affiliate-link data-resource-name="${item.nombre}" data-resource-category="${item.categoria}" data-resource-stage="${item.etapa}">Ver en Amazon</a>
+                          ${item.articulo_relacionado ? `<a class="text-link" href="${item.articulo_relacionado}" data-ga-event="resource_related_article_click" data-ga-resource-name="${item.nombre}" data-ga-resource-category="${item.categoria}" data-ga-resource-stage="${item.etapa}">Leer guía</a>` : ""}
+                        </div>
+                      </div>
+                    </article>
+                  `).join("")}
+                </div>
+              </section>
+            `;
+          }).join("");
         })
         .catch(() => {
           document.getElementById("resources-grid").innerHTML = "<p>No se pudieron cargar los recursos por el momento.</p>";

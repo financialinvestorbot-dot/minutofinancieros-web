@@ -59,9 +59,10 @@ Configuracion Cloudflare Pages:
 - `assets/styles.css`: estilos globales.
 - `assets/site-config.js`: configuracion editable del sitio. Actualmente contiene GA4.
 - `assets/analytics.js`: cargador liviano de Google Analytics 4.
-- `assets/newsletter.js`: validacion frontend del newsletter placeholder.
+- `assets/newsletter.js`: validacion frontend y tracking del newsletter.
 - `data/recursos.json`: recursos afiliados/placeholder.
 - `data/blog.json`: indice editable de articulos.
+- `docs/calendario-editorial.md`: backlog editorial del blog y criterios de medicion.
 - `sitemap.xml`: sitemap estatico.
 - `robots.txt`: permite indexacion del sitio.
 - `_headers`: headers de seguridad y cache.
@@ -99,11 +100,14 @@ Los recursos de `/recursos/` se editan en `data/recursos.json`. Cada item usa es
 }
 ```
 
-Los productos actuales son placeholders. Antes de publicar recomendaciones reales:
+Los productos actuales son recomendaciones reales en espanol con tag Amazon Associates `minutofinanci-20`.
 
-- reemplazar los ASIN `PLACEHOLDER`;
-- confirmar marketplace de Amazon segun audiencia;
-- revisar que el tag `minutofinanci-20` siga siendo el correcto.
+Cada recurso puede incluir:
+
+- `etapa`: bloque de decision en `/recursos/`.
+- `prioridad`: orden de aparicion.
+- `ideal_para`: motivo breve de recomendacion.
+- `articulo_relacionado`: guia interna para profundizar.
 
 ## Newsletter
 
@@ -112,11 +116,11 @@ El formulario de newsletter esta visible en el footer de todas las paginas.
 Estado actual:
 
 - valida email en frontend;
-- muestra mensaje de confirmacion;
-- no guarda datos;
-- no envia datos a terceros.
+- envia la suscripcion a `/api/newsletter`;
+- usa Cloudflare Pages Functions para conectar con Brevo;
+- mide submit, exito y error en GA4.
 
-Integracion futura: `docs/newsletter.md`.
+Detalles: `docs/newsletter.md`.
 
 ## Videos
 

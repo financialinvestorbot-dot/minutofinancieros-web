@@ -5,7 +5,11 @@
     "imagen": "/assets/recursos/recurso-libros.jpg",
     "imagen_alt": "Escritorio con laptop y libros apilados",
     "link_afiliado": "https://www.amazon.com/dp/9504985300?tag=minutofinanci-20",
-    "categoria": "Finanzas personales"
+    "categoria": "Finanzas personales",
+    "etapa": "Para empezar",
+    "prioridad": 1,
+    "ideal_para": "Entender hábitos, sesgos y errores comunes con el dinero.",
+    "articulo_relacionado": "/blog/3-habitos-diarios-de-gente-millonaria/"
   },
   {
     "nombre": "Te enseñaré a ser rico",
@@ -13,15 +17,11 @@
     "imagen": "/assets/recursos/recurso-presupuesto.jpg",
     "imagen_alt": "Notebook abierto con calculadora y lapicera en un escritorio",
     "link_afiliado": "https://www.amazon.com/dp/8411720136?tag=minutofinanci-20",
-    "categoria": "Ahorro y hábitos"
-  },
-  {
-    "nombre": "El millonario automático",
-    "descripcion": "Un método simple para automatizar ahorro e inversión, ideal para quien necesita construir constancia financiera.",
-    "imagen": "/assets/recursos/recurso-presupuesto.jpg",
-    "imagen_alt": "Notebook abierto con calculadora y lapicera en un escritorio",
-    "link_afiliado": "https://www.amazon.com/dp/0307275469?tag=minutofinanci-20",
-    "categoria": "Automatización"
+    "categoria": "Ahorro y hábitos",
+    "etapa": "Para empezar",
+    "prioridad": 2,
+    "ideal_para": "Pasar de mirar videos a construir un sistema mensual simple.",
+    "articulo_relacionado": "/blog/regla-50-30-20/"
   },
   {
     "nombre": "El hombre más rico de Babilonia",
@@ -29,7 +29,23 @@
     "imagen": "/assets/recursos/recurso-libros.jpg",
     "imagen_alt": "Escritorio con laptop y libros apilados",
     "link_afiliado": "https://www.amazon.com/dp/8477203717?tag=minutofinanci-20",
-    "categoria": "Principiantes"
+    "categoria": "Principiantes",
+    "etapa": "Para empezar",
+    "prioridad": 3,
+    "ideal_para": "Primer recurso para alguien que quiere reglas simples y memorables.",
+    "articulo_relacionado": "/blog/5-errores-comunes-al-ahorrar/"
+  },
+  {
+    "nombre": "El millonario automático",
+    "descripcion": "Un método simple para automatizar ahorro e inversión, ideal para quien necesita construir constancia financiera.",
+    "imagen": "/assets/recursos/recurso-presupuesto.jpg",
+    "imagen_alt": "Notebook abierto con calculadora y lapicera en un escritorio",
+    "link_afiliado": "https://www.amazon.com/dp/0307275469?tag=minutofinanci-20",
+    "categoria": "Automatización",
+    "etapa": "Para ordenar",
+    "prioridad": 4,
+    "ideal_para": "Separar ahorro, pagos e inversión sin depender de motivación.",
+    "articulo_relacionado": "/blog/como-dejar-de-procrastinar-con-tu-dinero/"
   },
   {
     "nombre": "El camino simple a la riqueza",
@@ -37,7 +53,11 @@
     "imagen": "/assets/recursos/recurso-inversion.jpg",
     "imagen_alt": "Pantalla con gráficos y visualizaciones de datos financieros",
     "link_afiliado": "https://www.amazon.com/dp/8416997578?tag=minutofinanci-20",
-    "categoria": "Inversión básica"
+    "categoria": "Inversión básica",
+    "etapa": "Para invertir",
+    "prioridad": 5,
+    "ideal_para": "Entender largo plazo, paciencia y simplicidad antes de comprar activos.",
+    "articulo_relacionado": "/blog/interes-compuesto-explicado-facil/"
   },
   {
     "nombre": "La guía Boglehead de inversión",
@@ -45,7 +65,11 @@
     "imagen": "/assets/recursos/recurso-inversion.jpg",
     "imagen_alt": "Pantalla con gráficos y visualizaciones de datos financieros",
     "link_afiliado": "https://www.amazon.com/dp/8423431614?tag=minutofinanci-20",
-    "categoria": "Inversión indexada"
+    "categoria": "Inversión indexada",
+    "etapa": "Para invertir",
+    "prioridad": 6,
+    "ideal_para": "Profundizar fondos indexados, asignación de cartera y costes.",
+    "articulo_relacionado": "/blog/interes-compuesto-explicado-facil/"
   },
   {
     "nombre": "El pequeño libro para invertir con sentido común",
@@ -53,7 +77,11 @@
     "imagen": "/assets/recursos/recurso-inversion.jpg",
     "imagen_alt": "Pantalla con gráficos y visualizaciones de datos financieros",
     "link_afiliado": "https://www.amazon.com/dp/8423425401?tag=minutofinanci-20",
-    "categoria": "Fondos indexados"
+    "categoria": "Fondos indexados",
+    "etapa": "Para invertir",
+    "prioridad": 7,
+    "ideal_para": "Reforzar una filosofía de inversión simple, diversificada y barata.",
+    "articulo_relacionado": "/blog/interes-compuesto-explicado-facil/"
   },
   {
     "nombre": "Un paseo aleatorio por Wall Street",
@@ -61,6 +89,10 @@
     "imagen": "/assets/recursos/recurso-inversion.jpg",
     "imagen_alt": "Pantalla con gráficos y visualizaciones de datos financieros",
     "link_afiliado": "https://www.amazon.com/dp/8411487660?tag=minutofinanci-20",
-    "categoria": "Mercados"
+    "categoria": "Mercados",
+    "etapa": "Para invertir",
+    "prioridad": 8,
+    "ideal_para": "Tener contexto amplio antes de perseguir modas de mercado.",
+    "articulo_relacionado": "/blog/como-salir-de-deudas-caras/"
   }
 ]

@@ -144,6 +144,12 @@ button:focus-visible {
   text-transform: uppercase;
 }
 
+.section-lead {
+  max-width: 780px;
+  margin: -2px 0 24px;
+  color: var(--muted);
+}
+
 h1,
 h2,
 h3,
@@ -520,6 +526,11 @@ h1 {
   line-height: 1;
 }
 
+.linktree-featured {
+  width: 100%;
+  margin-top: 8px;
+}
+
 .link-button-list {
   display: grid;
   gap: 12px;
@@ -572,6 +583,31 @@ h1 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
   max-width: 1180px;
+}
+
+.resource-grid {
+  grid-template-columns: 1fr;
+}
+
+.resource-stage {
+  display: grid;
+  gap: 16px;
+}
+
+.resource-stage + .resource-stage {
+  margin-top: 28px;
+}
+
+.resource-stage > h3 {
+  margin: 0;
+  color: var(--navy-900);
+  font-size: 1.18rem;
+}
+
+.resource-stage-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
 }
 
 .resource-card,
@@ -635,6 +671,23 @@ h1 {
 .resource-card p,
 .article-card p {
   color: var(--muted);
+}
+
+.resource-fit {
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+  font-size: 0.94rem;
+}
+
+.resource-fit strong {
+  color: var(--navy-900);
+}
+
+.resource-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
 }
 
 .resource-card .button {
@@ -807,6 +860,7 @@ h1 {
   .text-columns,
   .topic-grid,
   .resource-grid,
+  .resource-stage-grid,
   .article-grid,
   .story-section {
     grid-template-columns: 1fr;

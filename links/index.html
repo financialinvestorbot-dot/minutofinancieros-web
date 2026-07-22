@@ -49,6 +49,7 @@
         <p class="eyebrow">@minutofinancieros</p>
         <h1 id="links-title">Minuto Financieros</h1>
         <p class="page-lead">Educación financiera simple, práctica y en videos cortos.</p>
+        <a class="button button-primary linktree-featured" href="/recursos/" data-ga-event="link_hub_primary_click" data-ga-link-type="resources" data-ga-link-position="featured">Ver recursos recomendados</a>
         <div id="links-list" class="link-button-list" aria-label="Enlaces oficiales"></div>
       </section>
     </main>
@@ -66,7 +67,7 @@
       <section class="newsletter-box" aria-labelledby="newsletter-title">
         <h2 id="newsletter-title">Recibí un tip financiero por semana</h2>
         <p>Ideas breves para ahorrar, ordenar gastos e invertir con más criterio.</p>
-        <form class="newsletter-form" data-newsletter-form novalidate>
+        <form class="newsletter-form" data-newsletter-form data-newsletter-location="links-footer" novalidate>
           <label class="sr-only" for="newsletter-email">Correo electrónico</label>
           <input id="newsletter-email" type="email" name="email" placeholder="tu@email.com" autocomplete="email" required>
           <button type="submit">Anotarme</button>
@@ -77,16 +78,18 @@
 
     <script>
       const links = [
-        { nombre: "YouTube", detalle: "@MinutoFinancieros", url: "https://www.youtube.com/@MinutoFinancieros", icono: "YT" },
-        { nombre: "Instagram", detalle: "@minutofinancieros", url: "https://www.instagram.com/minutofinancieros/", icono: "IG" },
-        { nombre: "TikTok", detalle: "@minutofinancieros", url: "https://www.tiktok.com/@minutofinancieros", icono: "TT" },
-        { nombre: "Recursos y herramientas", detalle: "Libros, apps y productos mencionados", url: "/recursos/", icono: "$" },
-        { nombre: "Artículos", detalle: "Guías cortas de educación financiera", url: "/blog/", icono: "AR" },
-        { nombre: "Sitio principal", detalle: "minutofinancieros.com", url: "/", icono: "MF" }
+        { nombre: "Guía de la semana", detalle: "Interés compuesto explicado fácil", url: "/blog/interes-compuesto-explicado-facil/", icono: "01", tipo: "blog" },
+        { nombre: "Recursos y herramientas", detalle: "Libros en español para empezar y ordenar tus finanzas", url: "/recursos/", icono: "02", tipo: "resources" },
+        { nombre: "Newsletter", detalle: "Un tip financiero por semana", url: "#newsletter-title", icono: "03", tipo: "newsletter" },
+        { nombre: "YouTube", detalle: "@MinutoFinancieros", url: "https://www.youtube.com/@MinutoFinancieros", icono: "YT", tipo: "social" },
+        { nombre: "Instagram", detalle: "@minutofinancieros", url: "https://www.instagram.com/minutofinancieros/", icono: "IG", tipo: "social" },
+        { nombre: "TikTok", detalle: "@minutofinancieros", url: "https://www.tiktok.com/@minutofinancieros", icono: "TT", tipo: "social" },
+        { nombre: "Blog completo", detalle: "Guías cortas de educación financiera", url: "/blog/", icono: "BL", tipo: "blog" },
+        { nombre: "Sitio principal", detalle: "minutofinancieros.com", url: "/", icono: "MF", tipo: "site" }
       ];
 
-      document.getElementById("links-list").innerHTML = links.map((link) => `
-        <a class="link-button" href="${link.url}" ${link.url.startsWith("http") ? 'target="_blank" rel="noopener"' : ""}>
+      document.getElementById("links-list").innerHTML = links.map((link, index) => `
+        <a class="link-button" href="${link.url}" ${link.url.startsWith("http") ? 'target="_blank" rel="noopener"' : ""} data-ga-event="${link.tipo === "social" ? "social_click" : "link_hub_click"}" data-ga-link-name="${link.nombre}" data-ga-link-type="${link.tipo}" data-ga-link-position="${index + 1}">
           <span class="link-button-icon" aria-hidden="true">${link.icono}</span>
           <span>
             <strong>${link.nombre}</strong>

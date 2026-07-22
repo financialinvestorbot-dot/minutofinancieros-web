@@ -97,21 +97,49 @@ La curaduria actual de `/recursos/` prioriza recursos en español para:
 
 Cada URL debe mantener `tag=minutofinanci-20`.
 
-Los clicks en recursos de Amazon disparan el evento GA4:
+Los clicks en recursos de Amazon disparan el evento GA4 principal:
 
 ```text
-affiliate_click
+click_amazon_resource
 ```
 
 Parametros enviados:
 
 - `resource_name`
 - `resource_category`
+- `resource_stage`
 - `outbound_url`
+
+Tambien se mantiene `affiliate_click` como evento legacy para no perder continuidad si ya se habia creado una exploracion en GA4.
+
+## Eventos GA4 recomendados
+
+Eventos actuales del sitio:
+
+| Evento | Donde se dispara | Uso |
+| --- | --- | --- |
+| `click_amazon_resource` | Click en botones Amazon de `/recursos/` | Medir salida afiliada por producto y etapa |
+| `affiliate_click` | Click en botones Amazon de `/recursos/` | Compatibilidad con medicion anterior |
+| `resource_related_article_click` | Click desde un recurso hacia una guia | Saber que recursos generan lectura interna |
+| `social_click` | Click en redes desde `/links/` | Comparar salida a YouTube, Instagram y TikTok |
+| `link_hub_primary_click` | CTA principal de `/links/` | Medir el click prioritario del hub |
+| `link_hub_click` | Otros links internos de `/links/` | Entender orden y uso del hub |
+| `blog_article_click` | Cards del indice `/blog/` | Medir que articulos atraen desde el indice |
+| `blog_cta_click` | CTAs dentro de articulos | Medir conversion editorial |
+| `newsletter_submit` | Envio del formulario | Medir intencion de suscripcion |
+| `newsletter_success` | Alta aceptada por API | Medir registros enviados a Brevo |
+| `newsletter_error` | Error de API o red | Detectar problemas de conversion |
+
+Para crear conversiones en GA4, marcar como eventos clave:
+
+- `click_amazon_resource`
+- `newsletter_success`
+- `link_hub_primary_click`
+- `blog_cta_click`
 
 ## Seguimiento futuro de afiliados
 
-Cuando `/recursos/` tenga productos reales, comparar:
+Con `/recursos/` poblado con productos reales, comparar:
 
 - trafico a `/recursos/` desde GA4;
 - fuente/medio via UTM;
@@ -145,9 +173,21 @@ NEWSLETTER_REDIRECT_URL=https://minutofinancieros.com/?newsletter=confirmed
 
 Detalles completos: `docs/newsletter.md`.
 
+## Blog y calendario editorial
+
+Documento operativo: `docs/calendario-editorial.md`.
+
+Plan recomendado:
+
+- publicar 1 articulo corto por semana;
+- priorizar temas que ya funcionaron en videos;
+- cerrar cada articulo con CTA medible;
+- revisar mensualmente `blog_article_click`, `blog_cta_click`, `newsletter_success` y `click_amazon_resource`.
+
 ## Checklist despues de publicar cambios de marketing
 
 - Verificar `https://minutofinancieros.com/`.
 - Verificar `https://minutofinancieros.com/links/?utm_source=instagram&utm_medium=bio`.
 - Verificar `https://minutofinancieros.com/assets/site-config.js?v=ga4-20260627`.
 - Confirmar en GA4 Realtime que aparece una visita de prueba.
+- Confirmar en GA4 DebugView/Realtimes clicks de prueba en `/links/`, `/blog/` y `/recursos/`.
