@@ -41,6 +41,11 @@ Configuracion Cloudflare Pages:
 - `/blog/`: indice de articulos cortos.
 - `/blog/5-errores-comunes-al-ahorrar/`: articulo de ejemplo.
 - `/blog/regla-50-30-20/`: articulo de ejemplo.
+- `/blog/3-habitos-diarios-de-gente-millonaria/`: articulo de habitos financieros.
+- `/blog/como-dejar-de-procrastinar-con-tu-dinero/`: articulo de organizacion financiera.
+- `/blog/fondo-de-emergencia/`: articulo de ahorro preventivo.
+- `/blog/interes-compuesto-explicado-facil/`: articulo de inversion basica.
+- `/blog/como-salir-de-deudas-caras/`: articulo de deudas.
 - `/sobre/`: descripcion del proyecto.
 - `/terminos/`: Terminos de Servicio.
 - `/privacidad/`: Politica de Privacidad.
@@ -56,6 +61,7 @@ Configuracion Cloudflare Pages:
 - `assets/analytics.js`: cargador liviano de Google Analytics 4.
 - `assets/newsletter.js`: validacion frontend del newsletter placeholder.
 - `data/recursos.json`: recursos afiliados/placeholder.
+- `data/blog.json`: indice editable de articulos.
 - `sitemap.xml`: sitemap estatico.
 - `robots.txt`: permite indexacion del sitio.
 - `_headers`: headers de seguridad y cache.

@@ -1,0 +1,51 @@
+[
+  {
+    "titulo": "5 errores comunes al ahorrar",
+    "slug": "5-errores-comunes-al-ahorrar",
+    "fecha": "2026-06-25",
+    "categoria": "Ahorro",
+    "resumen": "Errores frecuentes que bloquean el ahorro personal y cómo corregirlos con hábitos simples."
+  },
+  {
+    "titulo": "Qué es la regla 50/30/20",
+    "slug": "regla-50-30-20",
+    "fecha": "2026-06-25",
+    "categoria": "Presupuesto",
+    "resumen": "Una forma simple de ordenar ingresos entre necesidades, gustos y ahorro."
+  },
+  {
+    "titulo": "3 hábitos diarios de gente millonaria",
+    "slug": "3-habitos-diarios-de-gente-millonaria",
+    "fecha": "2026-07-22",
+    "categoria": "Hábitos",
+    "resumen": "Tres hábitos realistas para mejorar decisiones de dinero sin depender de motivación."
+  },
+  {
+    "titulo": "Cómo dejar de procrastinar con tu dinero",
+    "slug": "como-dejar-de-procrastinar-con-tu-dinero",
+    "fecha": "2026-07-22",
+    "categoria": "Organización",
+    "resumen": "Un sistema simple para dejar de postergar presupuesto, ahorro e inversión."
+  },
+  {
+    "titulo": "Fondo de emergencia: cuánto guardar y dónde ponerlo",
+    "slug": "fondo-de-emergencia",
+    "fecha": "2026-07-22",
+    "categoria": "Ahorro",
+    "resumen": "Cómo pensar tu colchón financiero antes de invertir o asumir más riesgo."
+  },
+  {
+    "titulo": "Interés compuesto explicado fácil",
+    "slug": "interes-compuesto-explicado-facil",
+    "fecha": "2026-07-22",
+    "categoria": "Inversión básica",
+    "resumen": "Qué es, por qué necesita tiempo y cómo usarlo sin promesas exageradas."
+  },
+  {
+    "titulo": "Cómo salir de deudas caras paso a paso",
+    "slug": "como-salir-de-deudas-caras",
+    "fecha": "2026-07-22",
+    "categoria": "Deudas",
+    "resumen": "Un orden práctico para atacar tarjetas, préstamos y gastos financieros que pesan demasiado."
+  }
+]
