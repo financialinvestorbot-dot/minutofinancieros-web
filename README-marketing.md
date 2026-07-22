@@ -42,6 +42,8 @@ Las paginas cargan el config asi:
 
 ```html
 <script src="/assets/site-config.js?v=ga4-20260627" defer></script>
+<script src="/assets/analytics.js?v=tracking-20260722" defer></script>
+<script src="/assets/newsletter.js?v=tracking-20260722" defer></script>
 ```
 
 Si cambia el config en el futuro, actualizar tambien el query `v=...` para forzar refresh.

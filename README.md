@@ -82,6 +82,7 @@ El HTML carga `assets/site-config.js` con version query para evitar cache viejo:
 
 ```html
 <script src="/assets/site-config.js?v=ga4-20260627" defer></script>
+<script src="/assets/analytics.js?v=tracking-20260722" defer></script>
 ```
 
 Detalles y UTMs recomendadas: `README-marketing.md`.
