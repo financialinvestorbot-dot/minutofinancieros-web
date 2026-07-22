@@ -96,7 +96,7 @@ Los recursos de `/recursos/` se editan en `data/recursos.json`. Cada item usa es
   "nombre": "Nombre del recurso",
   "descripcion": "Descripcion corta",
   "imagen": "",
-  "link_afiliado": "https://www.amazon.com/dp/PRODUCTO?tag=minutofinanci-20",
+  "link_afiliado": "https://www.amazon.com/dp/PRODUCTOtag=minutofinanci-20",
   "categoria": "Categoria"
 }
 ```

@@ -54,16 +54,16 @@ Usar estas URLs en bios y descripciones para distinguir el origen del trafico:
 
 ```text
 Instagram bio:
-https://minutofinancieros.com/links/?utm_source=instagram&utm_medium=bio
+https://minutofinancieros.com/links/utm_source=instagram&utm_medium=bio
 
 TikTok bio:
-https://minutofinancieros.com/links/?utm_source=tiktok&utm_medium=bio
+https://minutofinancieros.com/links/utm_source=tiktok&utm_medium=bio
 
 YouTube descripcion:
-https://minutofinancieros.com/links/?utm_source=youtube&utm_medium=description
+https://minutofinancieros.com/links/utm_source=youtube&utm_medium=description
 
 YouTube canal:
-https://minutofinancieros.com/links/?utm_source=youtube&utm_medium=channel
+https://minutofinancieros.com/links/utm_source=youtube&utm_medium=channel
 ```
 
 Los parametros UTM no requieren codigo especial. Las rutas son estaticas y funcionan igual con o sin query string.
@@ -170,7 +170,7 @@ Variables necesarias:
 BREVO_API_KEY=
 BREVO_LIST_ID=
 BREVO_DOI_TEMPLATE_ID=
-NEWSLETTER_REDIRECT_URL=https://minutofinancieros.com/?newsletter=confirmed
+NEWSLETTER_REDIRECT_URL=https://minutofinancieros.com/newsletter=confirmed
 ```
 
 Detalles completos: `docs/newsletter.md`.
@@ -189,7 +189,7 @@ Plan recomendado:
 ## Checklist despues de publicar cambios de marketing
 
 - Verificar `https://minutofinancieros.com/`.
-- Verificar `https://minutofinancieros.com/links/?utm_source=instagram&utm_medium=bio`.
+- Verificar `https://minutofinancieros.com/links/utm_source=instagram&utm_medium=bio`.
 - Verificar `https://minutofinancieros.com/assets/site-config.js?v=ga4-20260627`.
 - Confirmar en GA4 Realtime que aparece una visita de prueba.
 - Confirmar en GA4 DebugView/Realtimes clicks de prueba en `/links/`, `/blog/` y `/recursos/`.

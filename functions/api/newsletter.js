@@ -1,5 +1,5 @@
 const BREVO_DOI_ENDPOINT = "https://api.brevo.com/v3/contacts/doubleOptinConfirmation";
-const DEFAULT_CONFIRMATION_REDIRECT = "https://minutofinancieros.com/?newsletter=confirmed";
+const DEFAULT_CONFIRMATION_REDIRECT = "https://minutofinancieros.com/newsletter=confirmed";
 
 function jsonResponse(body, status = 200) {
   return new Response(JSON.stringify(body), {
@@ -25,7 +25,7 @@ async function readJson(request) {
 
 export async function onRequestPost({ request, env }) {
   const body = await readJson(request);
-  const email = typeof body?.email === "string" ? body.email.trim().toLowerCase() : "";
+  const email = typeof body.email === "string"  body.email.trim().toLowerCase() : "";
   const apiKey = env.BREVO_API_KEY;
   const listId = Number(env.BREVO_LIST_ID);
   const templateId = Number(env.BREVO_DOI_TEMPLATE_ID);
@@ -64,14 +64,14 @@ export async function onRequestPost({ request, env }) {
 
     try {
       const brevoError = await brevoResponse.json();
-      if (brevoError?.message) {
+      if (brevoError.message) {
         message = brevoError.message;
       }
     } catch (error) {
       // Keep the generic user-facing message.
     }
 
-    return jsonResponse({ message }, brevoResponse.status >= 500 ? 502 : 400);
+    return jsonResponse({ message }, brevoResponse.status >= 500  502 : 400);
   }
 
   return jsonResponse({
