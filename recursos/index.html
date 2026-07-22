@@ -47,7 +47,7 @@
       <section class="page-hero compact-hero">
         <p class="eyebrow">Recursos</p>
         <h1>Herramientas para aprender y ordenar tus finanzas</h1>
-        <p class="page-lead">Esta página reúne libros y herramientas útiles para profundizar temas de ahorro, presupuesto, hábitos e inversión básica mencionados en el canal.</p>
+        <p class="page-lead">Esta página reúne recursos en español para profundizar temas de ahorro, presupuesto, hábitos e inversión básica mencionados en el canal.</p>
       </section>
 
       <section class="section" aria-labelledby="recursos-lista">
@@ -81,7 +81,7 @@
     </footer>
 
     <script>
-      fetch("/data/recursos.json?v=real-products-20260627")
+      fetch("/data/recursos.json?v=spanish-resources-20260722")
         .then((response) => response.json())
         .then((recursos) => {
           document.getElementById("resources-grid").innerHTML = recursos.map((item) => `

@@ -1,66 +1,66 @@
 [
   {
-    "nombre": "The Psychology of Money",
-    "descripcion": "Libro claro y muy usable para entender hábitos, sesgos y decisiones emocionales alrededor del dinero.",
+    "nombre": "La psicología del dinero",
+    "descripcion": "Lectura esencial para entender por qué las decisiones financieras dependen más del comportamiento que de las matemáticas.",
     "imagen": "/assets/recursos/recurso-libros.jpg",
     "imagen_alt": "Escritorio con laptop y libros apilados",
-    "link_afiliado": "https://www.amazon.com/dp/0857197681?tag=minutofinanci-20",
+    "link_afiliado": "https://www.amazon.com/dp/9504985300?tag=minutofinanci-20",
     "categoria": "Finanzas personales"
   },
   {
-    "nombre": "I Will Teach You to Be Rich",
-    "descripcion": "Guía práctica para automatizar finanzas, ordenar gastos, ahorrar e invertir con un sistema simple.",
-    "imagen": "/assets/recursos/recurso-libros.jpg",
-    "imagen_alt": "Escritorio con laptop y libros apilados",
-    "link_afiliado": "https://www.amazon.com/dp/1523505745?tag=minutofinanci-20",
+    "nombre": "Te enseñaré a ser rico",
+    "descripcion": "Guía práctica para ordenar cuentas, automatizar hábitos, gastar con intención y empezar a invertir sin complicarse.",
+    "imagen": "/assets/recursos/recurso-presupuesto.jpg",
+    "imagen_alt": "Notebook abierto con calculadora y lapicera en un escritorio",
+    "link_afiliado": "https://www.amazon.com/dp/8411720136?tag=minutofinanci-20",
     "categoria": "Ahorro y hábitos"
   },
   {
-    "nombre": "Your Money or Your Life",
-    "descripcion": "Un clásico para repensar la relación con el dinero, el consumo, el ahorro y la independencia financiera.",
+    "nombre": "El millonario automático",
+    "descripcion": "Un método simple para automatizar ahorro e inversión, ideal para quien necesita construir constancia financiera.",
     "imagen": "/assets/recursos/recurso-presupuesto.jpg",
     "imagen_alt": "Notebook abierto con calculadora y lapicera en un escritorio",
-    "link_afiliado": "https://www.amazon.com/dp/0143115766?tag=minutofinanci-20",
-    "categoria": "Presupuesto"
+    "link_afiliado": "https://www.amazon.com/dp/0307275469?tag=minutofinanci-20",
+    "categoria": "Automatización"
   },
   {
-    "nombre": "The Simple Path to Wealth",
-    "descripcion": "Introducción directa a inversión de largo plazo, independencia financiera y fondos indexados.",
+    "nombre": "El hombre más rico de Babilonia",
+    "descripcion": "Clásico breve sobre ahorro, control del gasto y principios simples para construir patrimonio con disciplina.",
+    "imagen": "/assets/recursos/recurso-libros.jpg",
+    "imagen_alt": "Escritorio con laptop y libros apilados",
+    "link_afiliado": "https://www.amazon.com/dp/8477203717?tag=minutofinanci-20",
+    "categoria": "Principiantes"
+  },
+  {
+    "nombre": "El camino simple a la riqueza",
+    "descripcion": "Excelente introducción a la independencia financiera y a la inversión de largo plazo con fondos indexados.",
     "imagen": "/assets/recursos/recurso-inversion.jpg",
     "imagen_alt": "Pantalla con gráficos y visualizaciones de datos financieros",
-    "link_afiliado": "https://www.amazon.com/dp/1533667926?tag=minutofinanci-20",
+    "link_afiliado": "https://www.amazon.com/dp/8416997578?tag=minutofinanci-20",
     "categoria": "Inversión básica"
   },
   {
-    "nombre": "The Bogleheads' Guide to Investing",
-    "descripcion": "Manual práctico para construir una cartera diversificada, simple y de bajo costo.",
+    "nombre": "La guía Boglehead de inversión",
+    "descripcion": "Manual sólido para aprender inversión pasiva, diversificación, costes bajos y construcción racional de cartera.",
     "imagen": "/assets/recursos/recurso-inversion.jpg",
     "imagen_alt": "Pantalla con gráficos y visualizaciones de datos financieros",
-    "link_afiliado": "https://www.amazon.com/dp/0470067365?tag=minutofinanci-20",
+    "link_afiliado": "https://www.amazon.com/dp/8423431614?tag=minutofinanci-20",
     "categoria": "Inversión indexada"
   },
   {
-    "nombre": "Just Keep Buying",
-    "descripcion": "Libro moderno con datos y reglas simples para ahorrar, invertir y sostener el plan en el tiempo.",
+    "nombre": "El pequeño libro para invertir con sentido común",
+    "descripcion": "John C. Bogle explica de forma directa por qué los fondos indexados de bajo coste son una estrategia difícil de superar.",
     "imagen": "/assets/recursos/recurso-inversion.jpg",
     "imagen_alt": "Pantalla con gráficos y visualizaciones de datos financieros",
-    "link_afiliado": "https://www.amazon.com/dp/0857199714?tag=minutofinanci-20",
-    "categoria": "Ahorro e inversión"
+    "link_afiliado": "https://www.amazon.com/dp/8423425401?tag=minutofinanci-20",
+    "categoria": "Fondos indexados"
   },
   {
-    "nombre": "Clever Fox Budget Planner",
-    "descripcion": "Planner físico para armar presupuesto mensual, registrar gastos, metas y seguimiento de hábitos.",
-    "imagen": "/assets/recursos/recurso-presupuesto.jpg",
-    "imagen_alt": "Notebook abierto con calculadora y lapicera en un escritorio",
-    "link_afiliado": "https://www.amazon.com/dp/B084RP9DBC?tag=minutofinanci-20",
-    "categoria": "Organización"
-  },
-  {
-    "nombre": "Texas Instruments BA II Plus",
-    "descripcion": "Calculadora financiera popular para practicar valor del dinero en el tiempo, tasas, cuotas y flujos.",
-    "imagen": "/assets/recursos/recurso-calculadora.jpg",
-    "imagen_alt": "Calculadora financiera HP sobre fondo claro",
-    "link_afiliado": "https://www.amazon.com/dp/B00000JZKB?tag=minutofinanci-20",
-    "categoria": "Herramientas"
+    "nombre": "Un paseo aleatorio por Wall Street",
+    "descripcion": "Libro completo para entender mercados, burbujas, riesgo, diversificación y por qué invertir simple suele funcionar.",
+    "imagen": "/assets/recursos/recurso-inversion.jpg",
+    "imagen_alt": "Pantalla con gráficos y visualizaciones de datos financieros",
+    "link_afiliado": "https://www.amazon.com/dp/8411487660?tag=minutofinanci-20",
+    "categoria": "Mercados"
   }
 ]

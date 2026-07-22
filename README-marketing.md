@@ -87,13 +87,13 @@ Tag Amazon configurado:
 minutofinanci-20
 ```
 
-La primera curaduria real de `/recursos/` incluye libros y herramientas para:
+La curaduria actual de `/recursos/` prioriza recursos en español para:
 
 - finanzas personales;
 - ahorro y habitos;
 - presupuesto;
 - inversion basica e indexada;
-- herramientas de calculo financiero.
+- mercados y diversificacion.
 
 Cada URL debe mantener `tag=minutofinanci-20`.
 
