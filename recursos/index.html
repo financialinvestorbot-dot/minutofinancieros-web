@@ -80,7 +80,7 @@
     </footer>
 
     <script>
-      fetch("/data/recursos.jsonv=resource-funnel-20260722")
+      fetch("/data/recursos.json?v=resource-funnel-20260722")
         .then((response) => response.json())
         .then((recursos) => {
           const etapas = ["Para empezar", "Para ordenar", "Para invertir"];
