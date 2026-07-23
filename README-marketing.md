@@ -170,7 +170,7 @@ Variables necesarias:
 BREVO_API_KEY=
 BREVO_LIST_ID=
 BREVO_DOI_TEMPLATE_ID=
-NEWSLETTER_REDIRECT_URL=https://minutofinancieros.com/newsletter=confirmed
+NEWSLETTER_REDIRECT_URL=https://minutofinancieros.com/?newsletter=confirmed
 ```
 
 Detalles completos: `docs/newsletter.md`.

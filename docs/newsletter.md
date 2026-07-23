@@ -54,7 +54,7 @@ Crear estas variables en Cloudflare Pages, proyecto `minutofinancieros-web`:
 BREVO_API_KEY=
 BREVO_LIST_ID=
 BREVO_DOI_TEMPLATE_ID=
-NEWSLETTER_REDIRECT_URL=https://minutofinancieros.com/newsletter=confirmed
+NEWSLETTER_REDIRECT_URL=https://minutofinancieros.com/?newsletter=confirmed
 ```
 
 Obligatorias:
@@ -65,7 +65,7 @@ Obligatorias:
 
 Opcional:
 
-- `NEWSLETTER_REDIRECT_URL`: URL a la que Brevo redirige despues de confirmar. Si no se configura, el codigo usa `https://minutofinancieros.com/newsletter=confirmed`.
+- `NEWSLETTER_REDIRECT_URL`: URL a la que Brevo redirige despues de confirmar. Si no se configura, el codigo usa `https://minutofinancieros.com/?newsletter=confirmed`.
 
 No commitear ninguna API key en el repo.
 
