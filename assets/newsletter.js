@@ -52,7 +52,7 @@
           throw new Error(data.message || "No pudimos registrar tu email. Probá de nuevo en unos minutos.");
         }
 
-        status.textContent = data.message || "Listo. Revisá tu correo para confirmar la suscripción.";
+        status.textContent = data.message || "Listo. Ya quedaste anotado para recibir tips financieros.";
         status.dataset.state = "success";
         form.reset();
 

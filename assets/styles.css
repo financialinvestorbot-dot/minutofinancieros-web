@@ -386,6 +386,12 @@ h1 {
   font-size: 0.92rem;
 }
 
+.newsletter-box .newsletter-consent {
+  margin: 10px 0 0;
+  color: #aebfd3;
+  font-size: 0.84rem;
+}
+
 .newsletter-form {
   display: flex;
   gap: 8px;

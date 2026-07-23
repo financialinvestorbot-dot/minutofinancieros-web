@@ -8,7 +8,7 @@ Los tres bloques principales del backlog ya estan implementados:
 
 - Bloque 1: contenido y estructura.
 - Bloque 2: infraestructura, analytics, UTMs, SEO basico y documentacion de videos.
-- Bloque 3: monetizacion futura, newsletter placeholder y notas de afiliados.
+- Bloque 3: monetizacion futura, newsletter conectado a Brevo y notas de afiliados.
 
 Produccion:
 

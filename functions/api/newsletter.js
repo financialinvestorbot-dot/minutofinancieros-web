@@ -1,5 +1,4 @@
-const BREVO_DOI_ENDPOINT = "https://api.brevo.com/v3/contacts/doubleOptinConfirmation";
-const DEFAULT_CONFIRMATION_REDIRECT = "https://minutofinancieros.com/?newsletter=confirmed";
+const BREVO_CONTACTS_ENDPOINT = "https://api.brevo.com/v3/contacts";
 
 function jsonResponse(body, status = 200) {
   return new Response(JSON.stringify(body), {
@@ -28,20 +27,18 @@ export async function onRequestPost({ request, env }) {
   const email = typeof body.email === "string" ? body.email.trim().toLowerCase() : "";
   const apiKey = env.BREVO_API_KEY;
   const listId = Number(env.BREVO_LIST_ID);
-  const templateId = Number(env.BREVO_DOI_TEMPLATE_ID);
-  const redirectionUrl = env.NEWSLETTER_REDIRECT_URL || DEFAULT_CONFIRMATION_REDIRECT;
 
   if (!isValidEmail(email)) {
     return jsonResponse({ message: "Ingresá un correo válido para continuar." }, 400);
   }
 
-  if (!apiKey || !Number.isInteger(listId) || !Number.isInteger(templateId)) {
+  if (!apiKey || !Number.isInteger(listId)) {
     return jsonResponse({
       message: "La suscripción todavía no está configurada. Probá de nuevo más tarde."
     }, 503);
   }
 
-  const brevoResponse = await fetch(BREVO_DOI_ENDPOINT, {
+  const brevoResponse = await fetch(BREVO_CONTACTS_ENDPOINT, {
     method: "POST",
     headers: {
       "Accept": "application/json",
@@ -50,9 +47,8 @@ export async function onRequestPost({ request, env }) {
     },
     body: JSON.stringify({
       email,
-      includeListIds: [listId],
-      templateId,
-      redirectionUrl,
+      listIds: [listId],
+      updateEnabled: true,
       attributes: {
         SOURCE: "minutofinancieros_footer"
       }
@@ -75,7 +71,7 @@ export async function onRequestPost({ request, env }) {
   }
 
   return jsonResponse({
-    message: "Listo. Revisá tu correo para confirmar la suscripción."
+    message: "Listo. Ya quedaste anotado para recibir tips financieros."
   });
 }
 
