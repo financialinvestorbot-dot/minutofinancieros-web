@@ -179,6 +179,8 @@ Eventos actuales del sitio:
 | `lead_magnet_blog_click` | Click desde la checklist al blog | Medir derivacion editorial |
 | `lead_magnet_resources_click` | Click desde la checklist a recursos | Medir derivacion monetizable |
 | `thank_you_resources_click` | Click desde gracias a recursos | Medir salida post-suscripcion |
+| `not_found_view` | Vista de pagina 404 | Detectar enlaces rotos o trafico mal dirigido |
+| `not_found_click` | Click desde pagina 404 | Medir recuperacion de usuarios |
 
 Para crear conversiones en GA4, marcar como eventos clave:
 

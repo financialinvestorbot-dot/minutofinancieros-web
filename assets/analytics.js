@@ -64,6 +64,13 @@
     });
   }
 
+  if (document.title.indexOf("Página no encontrada") === 0 || document.title.indexOf("Pagina no encontrada") === 0) {
+    trackEvent("not_found_view", {
+      page_path: window.location.pathname,
+      page_location: window.location.href
+    });
+  }
+
   document.addEventListener("click", function (event) {
     var trackedElement = event.target.closest("[data-ga-event]");
 

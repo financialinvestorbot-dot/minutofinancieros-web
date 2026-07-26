@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const requiredRoutes = [
+  "404.html",
   "index.html",
   "links/index.html",
   "recursos/index.html",
@@ -167,6 +168,10 @@ if (sitemap.includes("/gracias/")) {
   fail("Sitemap must not include /gracias/");
 }
 
+if (sitemap.includes("/404.html")) {
+  fail("Sitemap must not include 404.html");
+}
+
 const feed = read("feed.xml");
 const feedItems = (feed.match(/<item>/g) || []).length;
 if (feedItems !== posts.length) {
@@ -175,6 +180,10 @@ if (feedItems !== posts.length) {
 
 if (!read("gracias/index.html").includes('name="robots" content="noindex,follow"')) {
   fail("gracias/index.html must be noindex,follow");
+}
+
+if (!read("404.html").includes('name="robots" content="noindex,follow"')) {
+  fail("404.html must be noindex,follow");
 }
 
 checkCanonical("index.html", "https://minutofinancieros.com/");

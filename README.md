@@ -39,6 +39,7 @@ Configuracion Cloudflare Pages:
 ## Estructura
 
 - `/`: landing principal.
+- `404.html`: pagina de error personalizada para recuperar trafico perdido.
 - `/links/`: hub de enlaces para bios de redes sociales.
 - `/recursos/`: recursos y herramientas, alimentados desde `data/recursos.json`.
 - `/newsletter/`: landing dedicada para capturar emails desde redes y campañas.
