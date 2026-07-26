@@ -76,3 +76,18 @@ Revisar cada mes:
 - CTAs con mas clics;
 - recursos con mas salida hacia Amazon;
 - temas de video que mas trafico llevan a `/links/`.
+
+## Feed RSS
+
+El blog tiene feed RSS en:
+
+```text
+/feed.xml
+```
+
+Cuando se agreguen articulos nuevos, actualizar:
+
+- `data/blog.json`
+- `blog/index.html`
+- `sitemap.xml`
+- `feed.xml`

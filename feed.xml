@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minuto Financieros Blog</title>
+    <link>https://minutofinancieros.com/blog/</link>
+    <atom:link href="https://minutofinancieros.com/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Guias cortas de educacion financiera sobre ahorro, presupuesto, deudas, habitos e inversion basica.</description>
+    <language>es-AR</language>
+    <lastBuildDate>Sun, 26 Jul 2026 15:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Cómo armar un presupuesto mensual desde cero</title>
+      <link>https://minutofinancieros.com/blog/presupuesto-mensual-desde-cero/</link>
+      <guid isPermaLink="true">https://minutofinancieros.com/blog/presupuesto-mensual-desde-cero/</guid>
+      <pubDate>Sun, 26 Jul 2026 15:00:00 GMT</pubDate>
+      <category>Presupuesto</category>
+      <description>Una forma simple de ordenar ingresos, gastos y próximos pasos sin planillas complicadas.</description>
+    </item>
+    <item>
+      <title>Método avalancha vs bola de nieve para pagar deudas</title>
+      <link>https://minutofinancieros.com/blog/metodo-avalancha-bola-de-nieve/</link>
+      <guid isPermaLink="true">https://minutofinancieros.com/blog/metodo-avalancha-bola-de-nieve/</guid>
+      <pubDate>Sun, 26 Jul 2026 15:00:00 GMT</pubDate>
+      <category>Deudas</category>
+      <description>Dos formas de priorizar deudas y dejar de pagar al azar cada mes.</description>
+    </item>
+    <item>
+      <title>Qué son los gastos hormiga y cómo controlarlos</title>
+      <link>https://minutofinancieros.com/blog/gastos-hormiga/</link>
+      <guid isPermaLink="true">https://minutofinancieros.com/blog/gastos-hormiga/</guid>
+      <pubDate>Sun, 26 Jul 2026 15:00:00 GMT</pubDate>
+      <category>Ahorro</category>
+      <description>Cómo detectar pequeños gastos repetidos y reducirlos sin eliminar todo lo que disfrutás.</description>
+    </item>
+    <item>
+      <title>5 errores comunes al ahorrar</title>
+      <link>https://minutofinancieros.com/blog/5-errores-comunes-al-ahorrar/</link>
+      <guid isPermaLink="true">https://minutofinancieros.com/blog/5-errores-comunes-al-ahorrar/</guid>
+      <pubDate>Thu, 25 Jun 2026 15:00:00 GMT</pubDate>
+      <category>Ahorro</category>
+      <description>Errores frecuentes que bloquean el ahorro personal y cómo corregirlos con hábitos simples.</description>
+    </item>
+    <item>
+      <title>Qué es la regla 50/30/20</title>
+      <link>https://minutofinancieros.com/blog/regla-50-30-20/</link>
+      <guid isPermaLink="true">https://minutofinancieros.com/blog/regla-50-30-20/</guid>
+      <pubDate>Thu, 25 Jun 2026 15:00:00 GMT</pubDate>
+      <category>Presupuesto</category>
+      <description>Una forma simple de ordenar ingresos entre necesidades, gustos y ahorro.</description>
+    </item>
+    <item>
+      <title>3 hábitos diarios de gente millonaria</title>
+      <link>https://minutofinancieros.com/blog/3-habitos-diarios-de-gente-millonaria/</link>
+      <guid isPermaLink="true">https://minutofinancieros.com/blog/3-habitos-diarios-de-gente-millonaria/</guid>
+      <pubDate>Wed, 22 Jul 2026 15:00:00 GMT</pubDate>
+      <category>Hábitos</category>
+      <description>Tres hábitos realistas para mejorar decisiones de dinero sin depender de motivación.</description>
+    </item>
+    <item>
+      <title>Cómo dejar de procrastinar con tu dinero</title>
+      <link>https://minutofinancieros.com/blog/como-dejar-de-procrastinar-con-tu-dinero/</link>
+      <guid isPermaLink="true">https://minutofinancieros.com/blog/como-dejar-de-procrastinar-con-tu-dinero/</guid>
+      <pubDate>Wed, 22 Jul 2026 15:00:00 GMT</pubDate>
+      <category>Organización</category>
+      <description>Un sistema simple para dejar de postergar presupuesto, ahorro e inversión.</description>
+    </item>
+    <item>
+      <title>Fondo de emergencia: cuánto guardar y dónde ponerlo</title>
+      <link>https://minutofinancieros.com/blog/fondo-de-emergencia/</link>
+      <guid isPermaLink="true">https://minutofinancieros.com/blog/fondo-de-emergencia/</guid>
+      <pubDate>Wed, 22 Jul 2026 15:00:00 GMT</pubDate>
+      <category>Ahorro</category>
+      <description>Cómo pensar tu colchón financiero antes de invertir o asumir más riesgo.</description>
+    </item>
+    <item>
+      <title>Interés compuesto explicado fácil</title>
+      <link>https://minutofinancieros.com/blog/interes-compuesto-explicado-facil/</link>
+      <guid isPermaLink="true">https://minutofinancieros.com/blog/interes-compuesto-explicado-facil/</guid>
+      <pubDate>Wed, 22 Jul 2026 15:00:00 GMT</pubDate>
+      <category>Inversión básica</category>
+      <description>Qué es, por qué necesita tiempo y cómo usarlo sin promesas exageradas.</description>
+    </item>
+    <item>
+      <title>Cómo salir de deudas caras paso a paso</title>
+      <link>https://minutofinancieros.com/blog/como-salir-de-deudas-caras/</link>
+      <guid isPermaLink="true">https://minutofinancieros.com/blog/como-salir-de-deudas-caras/</guid>
+      <pubDate>Wed, 22 Jul 2026 15:00:00 GMT</pubDate>
+      <category>Deudas</category>
+      <description>Un orden práctico para atacar tarjetas, préstamos y gastos financieros que pesan demasiado.</description>
+    </item>
+  </channel>
+</rss>

@@ -71,6 +71,7 @@ Configuracion Cloudflare Pages:
 - `assets/newsletter.js`: validacion frontend y tracking del newsletter.
 - `data/recursos.json`: recursos afiliados reales en espanol con tag Amazon Associates.
 - `data/blog.json`: indice editable de articulos.
+- `feed.xml`: feed RSS del blog, generado desde `data/blog.json`.
 - `docs/calendario-editorial.md`: backlog editorial del blog y criterios de medicion.
 - `docs/secuencia-bienvenida-brevo.md`: emails iniciales sugeridos para automatizar en Brevo.
 - `sitemap.xml`: sitemap estatico.

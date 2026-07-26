@@ -57,6 +57,7 @@ Estado actual:
 - `/gracias/` esta marcado como `noindex,follow` y queda fuera del sitemap.
 - Las paginas principales tienen canonical.
 - La home declara schema JSON-LD `Organization` y `WebSite`.
+- La home y `/blog/` enlazan el feed RSS `/feed.xml`.
 
 Cuando se agregue una ruta nueva indexable, actualizar:
 
