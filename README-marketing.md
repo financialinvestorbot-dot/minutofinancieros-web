@@ -48,6 +48,22 @@ Las paginas cargan el config asi:
 
 Si cambia el config en el futuro, actualizar tambien el query `v=...` para forzar refresh.
 
+## SEO tecnico
+
+Estado actual:
+
+- `robots.txt` apunta a `https://minutofinancieros.com/sitemap.xml`.
+- El sitemap solo incluye rutas indexables.
+- `/gracias/` esta marcado como `noindex,follow` y queda fuera del sitemap.
+- Las paginas principales tienen canonical.
+- La home declara schema JSON-LD `Organization` y `WebSite`.
+
+Cuando se agregue una ruta nueva indexable, actualizar:
+
+- `sitemap.xml`
+- `_redirects` si necesita slash final
+- canonical en el `<head>`
+
 ## URLs recomendadas con UTM
 
 Usar estas URLs en bios y descripciones para distinguir el origen del trafico:

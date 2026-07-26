@@ -76,6 +76,13 @@ Configuracion Cloudflare Pages:
 - `_headers`: headers de seguridad y cache.
 - `_redirects`: redirects con slash final.
 
+SEO:
+
+- Las paginas indexables tienen canonical.
+- `sitemap.xml` incluye `lastmod`, `changefreq` y `priority`.
+- `/gracias/` usa `noindex,follow` y no esta incluido en el sitemap porque es una pagina post-suscripcion.
+- La home incluye schema JSON-LD `Organization` y `WebSite`.
+
 ## Analytics
 
 Google Analytics 4 esta activo mediante:
