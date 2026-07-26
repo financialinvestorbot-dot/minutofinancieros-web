@@ -89,7 +89,7 @@ Tag Amazon configurado:
 minutofinanci-20
 ```
 
-La curaduria actual de `/recursos/` prioriza recursos en español para:
+La curaduria actual de `/recursos/` prioriza 10 recursos en español para:
 
 - finanzas personales;
 - ahorro y habitos;
@@ -98,6 +98,14 @@ La curaduria actual de `/recursos/` prioriza recursos en español para:
 - mercados y diversificacion.
 
 Cada URL debe mantener `tag=minutofinanci-20`.
+
+Estructura actual:
+
+- `Para empezar`: 4 recursos.
+- `Para ordenar`: 2 recursos.
+- `Para invertir`: 4 recursos.
+
+La pagina incluye accesos por etapa al inicio y badges de recomendacion para el recurso principal de cada etapa.
 
 Los clicks en recursos de Amazon disparan el evento GA4 principal:
 

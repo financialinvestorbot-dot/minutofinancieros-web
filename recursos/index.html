@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Recursos y herramientas | Minuto Financieros</title>
-    <meta name="description" content="Recursos, libros y herramientas de finanzas personales mencionados por Minuto Financieros.">
+    <meta name="description" content="Recursos, libros y herramientas en español para ordenar finanzas personales, ahorro, presupuesto, hábitos e inversión básica.">
     <meta property="og:title" content="Recursos y herramientas | Minuto Financieros">
-    <meta property="og:description" content="Libros, herramientas y productos útiles para aprender finanzas personales.">
+    <meta property="og:description" content="Libros y recursos útiles para aprender finanzas personales en español.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://minutofinancieros.com/recursos/">
     <meta property="og:image" content="https://minutofinancieros.com/assets/social-minuto-financieros.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Recursos y herramientas | Minuto Financieros">
-    <meta name="twitter:description" content="Libros, herramientas y productos útiles para aprender finanzas personales.">
+    <meta name="twitter:description" content="Libros y recursos útiles para aprender finanzas personales en español.">
     <meta name="twitter:image" content="https://minutofinancieros.com/assets/social-minuto-financieros.png">
     <link rel="icon" href="/assets/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" href="/assets/favicon-32.png" sizes="32x32">
@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/styles.css?v=lead-magnet-20260726">
+    <link rel="stylesheet" href="/assets/styles.css?v=resource-guide-20260726">
     <script src="/assets/site-config.js?v=ga4-20260627" defer></script>
     <script src="/assets/analytics.js?v=lead-magnet-20260726" defer></script>
     <script src="/assets/newsletter.js?v=lead-magnet-20260726" defer></script>
@@ -45,13 +45,35 @@
       <section class="page-hero compact-hero">
         <p class="eyebrow">Recursos</p>
         <h1>Herramientas para aprender y ordenar tus finanzas</h1>
-        <p class="page-lead">Esta página reúne recursos en español para profundizar temas de ahorro, presupuesto, hábitos e inversión básica mencionados en el canal.</p>
+        <p class="page-lead">Una curaduría en español para pasar de ver contenido a tomar mejores decisiones: empezar, ordenar e invertir con más criterio.</p>
       </section>
 
-      <section class="section" aria-labelledby="recursos-lista">
+      <section class="section resource-guide" aria-labelledby="momento">
+        <div class="section-kicker">Elegí tu momento</div>
+        <h2 id="momento">No necesitás leer todo a la vez</h2>
+        <div class="resource-paths">
+          <a class="resource-path" href="#para-empezar" data-ga-event="resource_stage_jump" data-ga-stage="Para empezar">
+            <span>01</span>
+            <strong>Estoy empezando</strong>
+            <small>Primero hábitos, ahorro y decisiones simples.</small>
+          </a>
+          <a class="resource-path" href="#para-ordenar" data-ga-event="resource_stage_jump" data-ga-stage="Para ordenar">
+            <span>02</span>
+            <strong>Quiero ordenar mi sistema</strong>
+            <small>Automatizar pagos, ahorro y rutinas.</small>
+          </a>
+          <a class="resource-path" href="#para-invertir" data-ga-event="resource_stage_jump" data-ga-stage="Para invertir">
+            <span>03</span>
+            <strong>Quiero entender inversión</strong>
+            <small>Largo plazo, diversificación y costes bajos.</small>
+          </a>
+        </div>
+      </section>
+
+      <section class="section resources-section" aria-labelledby="recursos-lista">
         <div class="section-kicker">Curaduría práctica</div>
         <h2 id="recursos-lista">Recursos destacados</h2>
-        <p class="section-lead">Empezá por el bloque que coincida con tu momento actual. Cada clic hacia Amazon queda medido para comparar qué recomendaciones realmente ayudan a la audiencia.</p>
+        <p class="section-lead">Cada recurso tiene una etapa sugerida y una guía relacionada para entender el tema antes de comprar. Los clics hacia Amazon quedan medidos en GA4.</p>
         <div id="resources-grid" class="resource-grid"></div>
         <p class="affiliate-note">Transparencia: algunos enlaces pueden ser de afiliado. Si comprás desde esos links, Minuto Financieros puede recibir una comisión sin costo adicional para vos.</p>
       </section>
@@ -81,7 +103,7 @@
     </footer>
 
     <script>
-      fetch("/data/recursos.json?v=resource-funnel-20260722")
+      fetch("/data/recursos.json?v=resource-guide-20260726")
         .then((response) => response.json())
         .then((recursos) => {
           const etapas = ["Para empezar", "Para ordenar", "Para invertir"];
@@ -89,20 +111,24 @@
 
           document.getElementById("resources-grid").innerHTML = etapas.map((etapa) => {
             const items = ordenados.filter((item) => item.etapa === etapa);
+            const stageId = etapa.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-");
 
             if (!items.length) {
               return "";
             }
 
             return `
-              <section class="resource-stage" aria-label="${etapa}">
+              <section class="resource-stage" id="${stageId}" aria-label="${etapa}">
                 <h3>${etapa}</h3>
                 <div class="resource-stage-grid">
                   ${items.map((item) => `
                     <article class="resource-card">
                       <div class="resource-image">${item.imagen ? `<img src="${item.imagen}" alt="${item.imagen_alt || item.nombre}" loading="lazy">` : `<span aria-hidden="true">$</span>`}</div>
                       <div class="resource-body">
-                        <span class="resource-category">${item.categoria}</span>
+                        <div class="resource-meta">
+                          <span class="resource-category">${item.categoria}</span>
+                          ${item.recomendado ? `<span class="resource-badge">${item.recomendado}</span>` : ""}
+                        </div>
                         <h3>${item.nombre}</h3>
                         <p>${item.descripcion}</p>
                         ${item.ideal_para ? `<p class="resource-fit"><strong>Ideal para:</strong> ${item.ideal_para}</p>` : ""}

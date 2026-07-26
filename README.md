@@ -67,7 +67,7 @@ Configuracion Cloudflare Pages:
 - `assets/site-config.js`: configuracion editable del sitio. Actualmente contiene GA4.
 - `assets/analytics.js`: cargador liviano de Google Analytics 4.
 - `assets/newsletter.js`: validacion frontend y tracking del newsletter.
-- `data/recursos.json`: recursos afiliados/placeholder.
+- `data/recursos.json`: recursos afiliados reales en espanol con tag Amazon Associates.
 - `data/blog.json`: indice editable de articulos.
 - `docs/calendario-editorial.md`: backlog editorial del blog y criterios de medicion.
 - `docs/secuencia-bienvenida-brevo.md`: emails iniciales sugeridos para automatizar en Brevo.
@@ -110,6 +110,7 @@ Los recursos de `/recursos/` se editan en `data/recursos.json`. Cada item usa es
 ```
 
 Los productos actuales son recomendaciones reales en espanol con tag Amazon Associates `minutofinanci-20`.
+Cada link de Amazon debe conservar el formato `?tag=minutofinanci-20`.
 
 Cada recurso puede incluir:
 
