@@ -71,6 +71,12 @@ Para cambios en articulos, regenerar `sitemap.xml` y `feed.xml` con:
 node scripts\build-seo.js
 ```
 
+Antes de publicar cambios de marketing o SEO:
+
+```powershell
+node scripts\check-site.js
+```
+
 ## URLs recomendadas con UTM
 
 Usar estas URLs en bios y descripciones para distinguir el origen del trafico:

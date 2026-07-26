@@ -75,6 +75,7 @@ Configuracion Cloudflare Pages:
 - `docs/calendario-editorial.md`: backlog editorial del blog y criterios de medicion.
 - `docs/secuencia-bienvenida-brevo.md`: emails iniciales sugeridos para automatizar en Brevo.
 - `scripts/build-seo.js`: regenera `sitemap.xml` y `feed.xml` desde `data/blog.json`.
+- `scripts/check-site.js`: valida JSON, RSS, sitemap, canonical, links afiliados y mojibake.
 - `sitemap.xml`: sitemap estatico.
 - `robots.txt`: permite indexacion del sitio.
 - `_headers`: headers de seguridad y cache.
@@ -179,9 +180,15 @@ python -m http.server 4173 --bind 127.0.0.1
 node scripts\build-seo.js
 ```
 
-5. Commit en `main`.
-6. Push a GitHub.
-7. Cloudflare Pages redeploya automaticamente.
+5. Ejecutar QA local:
+
+```powershell
+node scripts\check-site.js
+```
+
+6. Commit en `main`.
+7. Push a GitHub.
+8. Cloudflare Pages redeploya automaticamente.
 
 ## Repositorio
 
