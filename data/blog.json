@@ -1,5 +1,26 @@
 [
   {
+    "titulo": "Cómo armar un presupuesto mensual desde cero",
+    "slug": "presupuesto-mensual-desde-cero",
+    "fecha": "2026-07-26",
+    "categoria": "Presupuesto",
+    "resumen": "Una forma simple de ordenar ingresos, gastos y próximos pasos sin planillas complicadas."
+  },
+  {
+    "titulo": "Método avalancha vs bola de nieve para pagar deudas",
+    "slug": "metodo-avalancha-bola-de-nieve",
+    "fecha": "2026-07-26",
+    "categoria": "Deudas",
+    "resumen": "Dos formas de priorizar deudas y dejar de pagar al azar cada mes."
+  },
+  {
+    "titulo": "Qué son los gastos hormiga y cómo controlarlos",
+    "slug": "gastos-hormiga",
+    "fecha": "2026-07-26",
+    "categoria": "Ahorro",
+    "resumen": "Cómo detectar pequeños gastos repetidos y reducirlos sin eliminar todo lo que disfrutás."
+  },
+  {
     "titulo": "5 errores comunes al ahorrar",
     "slug": "5-errores-comunes-al-ahorrar",
     "fecha": "2026-06-25",

@@ -43,6 +43,9 @@ Configuracion Cloudflare Pages:
 - `/checklist-financiero/`: lead magnet gratuito, imprimible como PDF desde el navegador.
 - `/gracias/`: pagina post-suscripcion con CTA hacia checklist, recursos y blog.
 - `/blog/`: indice de articulos cortos.
+- `/blog/presupuesto-mensual-desde-cero/`: guia SEO de presupuesto mensual.
+- `/blog/metodo-avalancha-bola-de-nieve/`: guia SEO de metodos para pagar deudas.
+- `/blog/gastos-hormiga/`: guia SEO de gastos pequenos repetidos.
 - `/blog/5-errores-comunes-al-ahorrar/`: articulo de ejemplo.
 - `/blog/regla-50-30-20/`: articulo de ejemplo.
 - `/blog/3-habitos-diarios-de-gente-millonaria/`: articulo de habitos financieros.

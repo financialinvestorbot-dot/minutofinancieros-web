@@ -44,6 +44,14 @@ Objetivo: convertir temas de videos cortos en articulos evergreen que puedan ran
 | 19 | Senales de que una deuda se esta volviendo peligrosa | Deudas | deuda peligrosa | `/blog/como-salir-de-deudas-caras/` |
 | 20 | Libros de finanzas personales para empezar | Recursos | mejores libros finanzas personales | `/recursos/` |
 
+## Publicados desde este backlog
+
+| Fecha | Tema | URL |
+| --- | --- | --- |
+| 2026-07-26 | Como armar un presupuesto mensual desde cero | `/blog/presupuesto-mensual-desde-cero/` |
+| 2026-07-26 | Metodo avalancha vs bola de nieve para pagar deudas | `/blog/metodo-avalancha-bola-de-nieve/` |
+| 2026-07-26 | Que son los gastos hormiga y como controlarlos | `/blog/gastos-hormiga/` |
+
 ## Plantilla rapida
 
 1. Problema concreto en el primer parrafo.
