@@ -543,6 +543,21 @@ h1 {
   margin-top: 8px;
 }
 
+.linktree-featured-stack {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.linktree-featured-stack .linktree-featured {
+  margin-top: 0;
+}
+
+.linktree-secondary {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .link-button-list {
   display: grid;
   gap: 12px;

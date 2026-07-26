@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Links oficiales | Minuto Financieros</title>
-    <meta name="description" content="Todos los enlaces oficiales de Minuto Financieros: YouTube, Instagram, TikTok, recursos y sitio web.">
+    <meta name="description" content="Todos los enlaces oficiales de Minuto Financieros: checklist gratuita, recursos, blog, YouTube, Instagram y TikTok.">
     <meta property="og:title" content="Links oficiales | Minuto Financieros">
-    <meta property="og:description" content="Accedé a los perfiles oficiales, recursos y artículos de Minuto Financieros.">
+    <meta property="og:description" content="Accedé a la checklist gratuita, recursos, artículos y perfiles oficiales de Minuto Financieros.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://minutofinancieros.com/links/">
     <meta property="og:image" content="https://minutofinancieros.com/assets/social-minuto-financieros.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Links oficiales | Minuto Financieros">
-    <meta name="twitter:description" content="Accedé a los perfiles oficiales, recursos y artículos de Minuto Financieros.">
+    <meta name="twitter:description" content="Accedé a la checklist gratuita, recursos, artículos y perfiles oficiales de Minuto Financieros.">
     <meta name="twitter:image" content="https://minutofinancieros.com/assets/social-minuto-financieros.png">
     <link rel="icon" href="/assets/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" href="/assets/favicon-32.png" sizes="32x32">
@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/styles.css?v=lead-magnet-20260726">
+    <link rel="stylesheet" href="/assets/styles.css?v=link-hub-20260726">
     <script src="/assets/site-config.js?v=ga4-20260627" defer></script>
     <script src="/assets/analytics.js?v=lead-magnet-20260726" defer></script>
     <script src="/assets/newsletter.js?v=lead-magnet-20260726" defer></script>
@@ -47,7 +47,12 @@
         <p class="eyebrow">@minutofinancieros</p>
         <h1 id="links-title">Minuto Financieros</h1>
         <p class="page-lead">Educación financiera simple, práctica y en videos cortos.</p>
-        <a class="button button-primary linktree-featured" href="/recursos/" data-ga-event="link_hub_primary_click" data-ga-link-type="resources" data-ga-link-position="featured">Ver recursos recomendados</a>
+
+        <div class="linktree-featured-stack">
+          <a class="button button-primary linktree-featured" href="/checklist-financiero/?utm_source=links&utm_medium=hub&utm_campaign=checklist" data-ga-event="link_hub_primary_click" data-ga-link-type="lead_magnet" data-ga-link-position="featured">Abrir checklist gratis</a>
+          <a class="button linktree-secondary" href="/recursos/?utm_source=links&utm_medium=hub&utm_campaign=resources" data-ga-event="link_hub_secondary_click" data-ga-link-type="resources" data-ga-link-position="secondary">Ver recursos recomendados</a>
+        </div>
+
         <div id="links-list" class="link-button-list" aria-label="Enlaces oficiales"></div>
       </section>
     </main>
@@ -77,13 +82,14 @@
 
     <script>
       const links = [
-        { nombre: "Guía de la semana", detalle: "Interés compuesto explicado fácil", url: "/blog/interes-compuesto-explicado-facil/", icono: "01", tipo: "blog" },
-        { nombre: "Recursos y herramientas", detalle: "Libros en español para empezar y ordenar tus finanzas", url: "/recursos/", icono: "02", tipo: "resources" },
-        { nombre: "Newsletter", detalle: "Un tip financiero por semana", url: "#newsletter-title", icono: "03", tipo: "newsletter" },
+        { nombre: "Guía de la semana", detalle: "Cómo armar un presupuesto mensual desde cero", url: "/blog/presupuesto-mensual-desde-cero/?utm_source=links&utm_medium=hub&utm_campaign=weekly_guide", icono: "01", tipo: "blog" },
+        { nombre: "Salir de deudas", detalle: "Método avalancha vs bola de nieve", url: "/blog/metodo-avalancha-bola-de-nieve/?utm_source=links&utm_medium=hub&utm_campaign=debt_guide", icono: "02", tipo: "blog" },
+        { nombre: "Gastos hormiga", detalle: "Detectá gastos chicos que se repiten", url: "/blog/gastos-hormiga/?utm_source=links&utm_medium=hub&utm_campaign=saving_guide", icono: "03", tipo: "blog" },
+        { nombre: "Newsletter", detalle: "Checklist y tips educativos por email", url: "#newsletter-title", icono: "04", tipo: "newsletter" },
         { nombre: "YouTube", detalle: "@MinutoFinancieros", url: "https://www.youtube.com/@MinutoFinancieros", icono: "YT", tipo: "social" },
         { nombre: "Instagram", detalle: "@minutofinancieros", url: "https://www.instagram.com/minutofinancieros/", icono: "IG", tipo: "social" },
         { nombre: "TikTok", detalle: "@minutofinancieros", url: "https://www.tiktok.com/@minutofinancieros", icono: "TT", tipo: "social" },
-        { nombre: "Blog completo", detalle: "Guías cortas de educación financiera", url: "/blog/", icono: "BL", tipo: "blog" },
+        { nombre: "Blog completo", detalle: "Guías cortas de educación financiera", url: "/blog/?utm_source=links&utm_medium=hub&utm_campaign=blog", icono: "BL", tipo: "blog" },
         { nombre: "Sitio principal", detalle: "minutofinancieros.com", url: "/", icono: "MF", tipo: "site" }
       ];
 

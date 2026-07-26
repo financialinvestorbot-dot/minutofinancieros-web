@@ -133,6 +133,7 @@ Eventos actuales del sitio:
 | `resource_related_article_click` | Click desde un recurso hacia una guia | Saber que recursos generan lectura interna |
 | `social_click` | Click en redes desde `/links/` | Comparar salida a YouTube, Instagram y TikTok |
 | `link_hub_primary_click` | CTA principal de `/links/` | Medir el click prioritario del hub |
+| `link_hub_secondary_click` | CTA secundario de `/links/` | Medir salida a recursos desde el hub |
 | `link_hub_click` | Otros links internos de `/links/` | Entender orden y uso del hub |
 | `blog_article_click` | Cards del indice `/blog/` | Medir que articulos atraen desde el indice |
 | `blog_cta_click` | CTAs dentro de articulos | Medir conversion editorial |
