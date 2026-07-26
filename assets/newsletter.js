@@ -3,7 +3,7 @@
 
   forms.forEach(function (form) {
     var input = form.querySelector('input[type="email"]');
-    var status = form.querySelector("[data-newsletter-status]");
+    var status = form.querySelector("[data-newsletter-status]") || form.parentElement.querySelector("[data-newsletter-status]");
     var submitButton = form.querySelector('button[type="submit"]');
 
     form.addEventListener("submit", async function (event) {
@@ -14,7 +14,7 @@
       }
 
       if (!input.checkValidity()) {
-        status.textContent = "Ingresá un correo válido para continuar.";
+        status.textContent = "Ingres\u00e1 un correo v\u00e1lido para continuar.";
         status.dataset.state = "error";
         input.focus();
         return;
@@ -49,7 +49,7 @@
         });
 
         if (!response.ok) {
-          throw new Error(data.message || "No pudimos registrar tu email. Probá de nuevo en unos minutos.");
+          throw new Error(data.message || "No pudimos registrar tu email. Prob\u00e1 de nuevo en unos minutos.");
         }
 
         status.textContent = data.message || "Listo. Ya quedaste anotado para recibir tips financieros.";
@@ -62,7 +62,7 @@
           });
         }
       } catch (error) {
-        status.textContent = error.message || "No pudimos registrar tu email. Probá de nuevo en unos minutos.";
+        status.textContent = error.message || "No pudimos registrar tu email. Prob\u00e1 de nuevo en unos minutos.";
         status.dataset.state = "error";
 
         if (typeof window.MinutoFinancierosTrack === "function") {
