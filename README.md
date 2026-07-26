@@ -15,6 +15,7 @@ Produccion:
 - Sitio publico: https://minutofinancieros.com/
 - Links: https://minutofinancieros.com/links/
 - Recursos: https://minutofinancieros.com/recursos/
+- Newsletter: https://minutofinancieros.com/newsletter/
 - Checklist financiero: https://minutofinancieros.com/checklist-financiero/
 - Gracias newsletter: https://minutofinancieros.com/gracias/
 - Blog: https://minutofinancieros.com/blog/
@@ -40,6 +41,7 @@ Configuracion Cloudflare Pages:
 - `/`: landing principal.
 - `/links/`: hub de enlaces para bios de redes sociales.
 - `/recursos/`: recursos y herramientas, alimentados desde `data/recursos.json`.
+- `/newsletter/`: landing dedicada para capturar emails desde redes y campañas.
 - `/checklist-financiero/`: lead magnet gratuito, imprimible como PDF desde el navegador.
 - `/gracias/`: pagina post-suscripcion con CTA hacia checklist, recursos y blog.
 - `/blog/`: indice de articulos cortos.

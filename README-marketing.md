@@ -80,6 +80,9 @@ https://minutofinancieros.com/links/?utm_source=youtube&utm_medium=description
 
 YouTube canal:
 https://minutofinancieros.com/links/?utm_source=youtube&utm_medium=channel
+
+Campaña directa a newsletter:
+https://minutofinancieros.com/newsletter/?utm_source=instagram&utm_medium=bio&utm_campaign=newsletter
 ```
 
 Los parametros UTM no requieren codigo especial. Las rutas son estaticas y funcionan igual con o sin query string.
@@ -193,6 +196,7 @@ Estado actual:
 - envia la suscripcion a `/api/newsletter`;
 - usa una Cloudflare Pages Function para llamar a Brevo sin exponer la API key;
 - crea o actualiza contactos directamente en Brevo;
+- tiene landing dedicada en `/newsletter/`;
 - redirige a `/gracias/` despues del alta correcta;
 - ofrece el lead magnet `/checklist-financiero/`;
 - requiere variables de entorno en Cloudflare Pages.

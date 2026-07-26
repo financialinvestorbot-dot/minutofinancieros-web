@@ -36,6 +36,7 @@ Referencias:
 ## Archivos relacionados
 
 - HTML: bloque `.newsletter-box` en el footer de cada pagina.
+- Landing dedicada: `newsletter/index.html`.
 - CSS: `assets/styles.css`.
 - JS frontend: `assets/newsletter.js`.
 - Function backend: `functions/api/newsletter.js`.
