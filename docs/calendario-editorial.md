@@ -89,5 +89,9 @@ Cuando se agreguen articulos nuevos, actualizar:
 
 - `data/blog.json`
 - `blog/index.html`
-- `sitemap.xml`
-- `feed.xml`
+
+Despues regenerar SEO:
+
+```powershell
+node scripts\build-seo.js
+```

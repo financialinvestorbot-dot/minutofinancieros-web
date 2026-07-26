@@ -74,6 +74,7 @@ Configuracion Cloudflare Pages:
 - `feed.xml`: feed RSS del blog, generado desde `data/blog.json`.
 - `docs/calendario-editorial.md`: backlog editorial del blog y criterios de medicion.
 - `docs/secuencia-bienvenida-brevo.md`: emails iniciales sugeridos para automatizar en Brevo.
+- `scripts/build-seo.js`: regenera `sitemap.xml` y `feed.xml` desde `data/blog.json`.
 - `sitemap.xml`: sitemap estatico.
 - `robots.txt`: permite indexacion del sitio.
 - `_headers`: headers de seguridad y cache.
@@ -172,9 +173,15 @@ python -m http.server 4173 --bind 127.0.0.1
 ```
 
 3. Probar rutas principales.
-4. Commit en `main`.
-5. Push a GitHub.
-6. Cloudflare Pages redeploya automaticamente.
+4. Si se agregaron articulos o rutas SEO, regenerar:
+
+```powershell
+node scripts\build-seo.js
+```
+
+5. Commit en `main`.
+6. Push a GitHub.
+7. Cloudflare Pages redeploya automaticamente.
 
 ## Repositorio
 

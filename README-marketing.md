@@ -65,6 +65,12 @@ Cuando se agregue una ruta nueva indexable, actualizar:
 - `_redirects` si necesita slash final
 - canonical en el `<head>`
 
+Para cambios en articulos, regenerar `sitemap.xml` y `feed.xml` con:
+
+```powershell
+node scripts\build-seo.js
+```
+
 ## URLs recomendadas con UTM
 
 Usar estas URLs en bios y descripciones para distinguir el origen del trafico:
