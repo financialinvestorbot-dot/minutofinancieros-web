@@ -11,6 +11,8 @@ Flujo actual:
 3. `functions/api/newsletter.js` llama a la API de contactos de Brevo.
 4. Brevo crea o actualiza el contacto y lo agrega a la lista configurada.
 5. El sitio muestra confirmacion inmediata.
+6. El navegador redirige a `/gracias/`, donde se ofrece el lead magnet gratuito.
+7. La pagina de gracias lleva a `/checklist-financiero/`, una checklist imprimible para ordenar finanzas en 30 minutos.
 
 Este flujo no usa double opt-in porque la cuenta Brevo aun no tiene Transaccional activo. Cuando Brevo habilite Transaccional, se puede volver al flujo con email de confirmacion.
 
@@ -38,6 +40,8 @@ Referencias:
 - JS frontend: `assets/newsletter.js`.
 - Function backend: `functions/api/newsletter.js`.
 - Privacidad: `privacidad/index.html`.
+- Pagina de gracias: `gracias/index.html`.
+- Lead magnet: `checklist-financiero/index.html`.
 
 ## Variables de entorno en Cloudflare Pages
 
@@ -79,8 +83,10 @@ No commitear ninguna API key en el repo.
 1. Abrir `https://minutofinancieros.com/`.
 2. Ingresar un email de prueba en el newsletter del footer.
 3. Verificar que el sitio muestre: `Listo. Ya quedaste anotado para recibir tips financieros.`
-4. Entrar a Brevo y verificar que el contacto aparezca en `Minuto Financieros Newsletter`.
-5. Probar un email invalido para confirmar que el sitio muestra error.
+4. Verificar que luego redirija a `https://minutofinancieros.com/gracias/`.
+5. Abrir el boton hacia `https://minutofinancieros.com/checklist-financiero/`.
+6. Entrar a Brevo y verificar que el contacto aparezca en `Minuto Financieros Newsletter`.
+7. Probar un email invalido para confirmar que el sitio muestra error.
 
 ## Mensajes visibles
 
@@ -101,6 +107,35 @@ Error de proveedor/configuracion:
 ```text
 No pudimos registrar tu email. Proba de nuevo en unos minutos.
 ```
+
+## Lead magnet
+
+Promesa visible en el footer:
+
+```text
+Recibi la checklist financiera gratis
+```
+
+El recurso vive en:
+
+```text
+/checklist-financiero/
+```
+
+La pagina es HTML estatico, mobile friendly e imprimible desde el boton `Imprimir o guardar PDF`.
+
+Eventos GA4 relacionados:
+
+- `newsletter_submit`
+- `newsletter_success`
+- `newsletter_error`
+- `newsletter_thank_you_view`
+- `lead_magnet_view`
+- `lead_magnet_open`
+- `lead_magnet_print`
+- `lead_magnet_blog_click`
+- `lead_magnet_resources_click`
+- `thank_you_resources_click`
 
 ## Como ocultarlo rapido
 

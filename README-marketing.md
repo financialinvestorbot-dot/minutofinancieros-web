@@ -42,8 +42,8 @@ Las paginas cargan el config asi:
 
 ```html
 <script src="/assets/site-config.js?v=ga4-20260627" defer></script>
-<script src="/assets/analytics.js?v=tracking-20260722" defer></script>
-<script src="/assets/newsletter.js?v=tracking-20260722" defer></script>
+<script src="/assets/analytics.js?v=lead-magnet-20260726" defer></script>
+<script src="/assets/newsletter.js?v=lead-magnet-20260726" defer></script>
 ```
 
 Si cambia el config en el futuro, actualizar tambien el query `v=...` para forzar refresh.
@@ -131,6 +131,13 @@ Eventos actuales del sitio:
 | `newsletter_submit` | Envio del formulario | Medir intencion de suscripcion |
 | `newsletter_success` | Alta aceptada por API | Medir registros enviados a Brevo |
 | `newsletter_error` | Error de API o red | Detectar problemas de conversion |
+| `newsletter_thank_you_view` | Vista de `/gracias/` | Confirmar llegada post-suscripcion |
+| `lead_magnet_view` | Vista de `/checklist-financiero/` | Medir consumo del recurso |
+| `lead_magnet_open` | Click desde `/gracias/` hacia la checklist | Medir interes real en el recurso |
+| `lead_magnet_print` | Boton imprimir/guardar PDF de la checklist | Medir uso profundo del recurso |
+| `lead_magnet_blog_click` | Click desde la checklist al blog | Medir derivacion editorial |
+| `lead_magnet_resources_click` | Click desde la checklist a recursos | Medir derivacion monetizable |
+| `thank_you_resources_click` | Click desde gracias a recursos | Medir salida post-suscripcion |
 
 Para crear conversiones en GA4, marcar como eventos clave:
 
@@ -153,6 +160,7 @@ Objetivo: estimar si conviene enviar trafico directo a Amazon o primero a una pa
 ## Newsletter
 
 El formulario del footer esta documentado en `docs/newsletter.md`.
+La secuencia sugerida para automatizar en Brevo esta en `docs/secuencia-bienvenida-brevo.md`.
 
 Estado actual:
 
@@ -160,6 +168,8 @@ Estado actual:
 - envia la suscripcion a `/api/newsletter`;
 - usa una Cloudflare Pages Function para llamar a Brevo sin exponer la API key;
 - crea o actualiza contactos directamente en Brevo;
+- redirige a `/gracias/` despues del alta correcta;
+- ofrece el lead magnet `/checklist-financiero/`;
 - requiere variables de entorno en Cloudflare Pages.
 
 Proveedor elegido: Brevo.

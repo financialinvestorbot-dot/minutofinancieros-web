@@ -52,6 +52,18 @@
 
   window.MinutoFinancierosTrack = trackEvent;
 
+  if (window.location.pathname === "/gracias/") {
+    trackEvent("newsletter_thank_you_view", {
+      page_path: window.location.pathname
+    });
+  }
+
+  if (window.location.pathname === "/checklist-financiero/") {
+    trackEvent("lead_magnet_view", {
+      page_path: window.location.pathname
+    });
+  }
+
   document.addEventListener("click", function (event) {
     var trackedElement = event.target.closest("[data-ga-event]");
 

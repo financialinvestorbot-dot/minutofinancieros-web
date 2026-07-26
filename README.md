@@ -15,6 +15,8 @@ Produccion:
 - Sitio publico: https://minutofinancieros.com/
 - Links: https://minutofinancieros.com/links/
 - Recursos: https://minutofinancieros.com/recursos/
+- Checklist financiero: https://minutofinancieros.com/checklist-financiero/
+- Gracias newsletter: https://minutofinancieros.com/gracias/
 - Blog: https://minutofinancieros.com/blog/
 - Sobre el proyecto: https://minutofinancieros.com/sobre/
 - Terminos: https://minutofinancieros.com/terminos/
@@ -38,6 +40,8 @@ Configuracion Cloudflare Pages:
 - `/`: landing principal.
 - `/links/`: hub de enlaces para bios de redes sociales.
 - `/recursos/`: recursos y herramientas, alimentados desde `data/recursos.json`.
+- `/checklist-financiero/`: lead magnet gratuito, imprimible como PDF desde el navegador.
+- `/gracias/`: pagina post-suscripcion con CTA hacia checklist, recursos y blog.
 - `/blog/`: indice de articulos cortos.
 - `/blog/5-errores-comunes-al-ahorrar/`: articulo de ejemplo.
 - `/blog/regla-50-30-20/`: articulo de ejemplo.
@@ -63,6 +67,7 @@ Configuracion Cloudflare Pages:
 - `data/recursos.json`: recursos afiliados/placeholder.
 - `data/blog.json`: indice editable de articulos.
 - `docs/calendario-editorial.md`: backlog editorial del blog y criterios de medicion.
+- `docs/secuencia-bienvenida-brevo.md`: emails iniciales sugeridos para automatizar en Brevo.
 - `sitemap.xml`: sitemap estatico.
 - `robots.txt`: permite indexacion del sitio.
 - `_headers`: headers de seguridad y cache.
@@ -82,7 +87,7 @@ El HTML carga `assets/site-config.js` con version query para evitar cache viejo:
 
 ```html
 <script src="/assets/site-config.js?v=ga4-20260627" defer></script>
-<script src="/assets/analytics.js?v=tracking-20260722" defer></script>
+<script src="/assets/analytics.js?v=lead-magnet-20260726" defer></script>
 ```
 
 Detalles y UTMs recomendadas: `README-marketing.md`.
@@ -119,7 +124,9 @@ Estado actual:
 - valida email en frontend;
 - envia la suscripcion a `/api/newsletter`;
 - usa Cloudflare Pages Functions para conectar con Brevo;
-- mide submit, exito y error en GA4.
+- redirige a `/gracias/` luego del alta correcta;
+- ofrece el lead magnet `/checklist-financiero/`;
+- mide submit, exito, error y clicks del lead magnet en GA4.
 
 Detalles: `docs/newsletter.md`.
 
@@ -137,7 +144,7 @@ Detalles: `docs/video-hosting.md`.
   - `https://minutofinancieros.com/`
   - `https://minutofinancieros.com/terminos/`
   - `https://minutofinancieros.com/privacidad/`
-- Mantener visibles los enlaces a Inicio, Terminos y Privacidad en header/footer.
+- Mantener visibles los enlaces a Inicio, Terminos y Privacidad en el footer.
 - Mantener el sitio estatico y liviano.
 - No agregar framework salvo necesidad clara.
 

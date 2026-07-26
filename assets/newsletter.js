@@ -61,6 +61,10 @@
             form_location: form.dataset.newsletterLocation || "footer"
           });
         }
+
+        window.setTimeout(function () {
+          window.location.href = "/gracias/?newsletter=1";
+        }, 700);
       } catch (error) {
         status.textContent = error.message || "No pudimos registrar tu email. Prob\u00e1 de nuevo en unos minutos.";
         status.dataset.state = "error";
