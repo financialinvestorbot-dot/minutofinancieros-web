@@ -54,6 +54,7 @@ Configuracion Cloudflare Pages:
 - `/blog/automatizar-ahorro-en-20-minutos/`: guia SEO para automatizar el ahorro.
 - `/blog/errores-comunes-tarjeta-credito/`: guia SEO para usar tarjeta de credito con mas control.
 - `/blog/que-mirar-antes-comprar-curso-financiero/`: guia SEO para evaluar cursos financieros.
+- `/blog/invertir-con-poco-dinero-por-donde-empezar/`: guia SEO para empezar a invertir con montos chicos.
 - `/blog/5-errores-comunes-al-ahorrar/`: articulo de ejemplo.
 - `/blog/regla-50-30-20/`: articulo de ejemplo.
 - `/blog/3-habitos-diarios-de-gente-millonaria/`: articulo de habitos financieros.
