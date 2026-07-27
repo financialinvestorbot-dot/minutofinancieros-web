@@ -28,6 +28,7 @@ Produccion:
 - HTML, CSS y JavaScript estatico.
 - Sin framework.
 - Sin build step.
+- `package.json` solo agrupa scripts de mantenimiento; no requiere dependencias.
 - Deploy automatico en Cloudflare Pages desde `main`.
 
 Configuracion Cloudflare Pages:
@@ -77,6 +78,7 @@ Configuracion Cloudflare Pages:
 - `docs/secuencia-bienvenida-brevo.md`: emails iniciales sugeridos para automatizar en Brevo.
 - `scripts/build-seo.js`: regenera `sitemap.xml` y `feed.xml` desde `data/blog.json`.
 - `scripts/check-site.js`: valida JSON, RSS, sitemap, canonical, links afiliados y mojibake.
+- `package.json`: comandos `npm run build:seo`, `npm run check` y `npm run qa`.
 - `sitemap.xml`: sitemap estatico.
 - `robots.txt`: permite indexacion del sitio.
 - `_headers`: headers de seguridad y cache.
@@ -175,21 +177,22 @@ python -m http.server 4173 --bind 127.0.0.1
 ```
 
 3. Probar rutas principales.
-4. Si se agregaron articulos o rutas SEO, regenerar:
+4. Ejecutar QA local antes de publicar:
 
 ```powershell
-node scripts\build-seo.js
+npm run qa
 ```
 
-5. Ejecutar QA local:
+Comandos equivalentes por separado:
 
 ```powershell
-node scripts\check-site.js
+npm run build:seo
+npm run check
 ```
 
-6. Commit en `main`.
-7. Push a GitHub.
-8. Cloudflare Pages redeploya automaticamente.
+5. Commit en `main`.
+6. Push a GitHub.
+7. Cloudflare Pages redeploya automaticamente.
 
 ## Repositorio
 

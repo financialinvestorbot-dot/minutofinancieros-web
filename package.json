@@ -1,0 +1,11 @@
+{
+  "name": "minutofinancieros-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio publico estatico de Minuto Financieros.",
+  "scripts": {
+    "build:seo": "node scripts/build-seo.js",
+    "check": "node scripts/check-site.js",
+    "qa": "npm run build:seo && npm run check"
+  }
+}

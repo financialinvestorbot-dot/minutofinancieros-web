@@ -93,5 +93,5 @@ Cuando se agreguen articulos nuevos, actualizar:
 Despues regenerar SEO:
 
 ```powershell
-node scripts\build-seo.js
+npm run build:seo
 ```

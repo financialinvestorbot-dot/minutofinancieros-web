@@ -68,13 +68,13 @@ Cuando se agregue una ruta nueva indexable, actualizar:
 Para cambios en articulos, regenerar `sitemap.xml` y `feed.xml` con:
 
 ```powershell
-node scripts\build-seo.js
+npm run build:seo
 ```
 
 Antes de publicar cambios de marketing o SEO:
 
 ```powershell
-node scripts\check-site.js
+npm run qa
 ```
 
 ## URLs recomendadas con UTM
