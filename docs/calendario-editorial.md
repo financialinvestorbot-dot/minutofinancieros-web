@@ -54,6 +54,7 @@ Objetivo: convertir temas de videos cortos en articulos evergreen que puedan ran
 | 2026-07-27 | Cuanto deberias ahorrar por mes segun tu ingreso | `/blog/cuanto-ahorrar-por-mes-segun-ingreso/` |
 | 2026-07-27 | Como automatizar tu ahorro en 20 minutos | `/blog/automatizar-ahorro-en-20-minutos/` |
 | 2026-07-27 | Errores comunes al usar tarjeta de credito | `/blog/errores-comunes-tarjeta-credito/` |
+| 2026-07-27 | Que mirar antes de comprar un curso financiero | `/blog/que-mirar-antes-comprar-curso-financiero/` |
 
 ## Plantilla rapida
 
