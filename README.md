@@ -52,6 +52,7 @@ Configuracion Cloudflare Pages:
 - `/blog/gastos-hormiga/`: guia SEO de gastos pequenos repetidos.
 - `/blog/cuanto-ahorrar-por-mes-segun-ingreso/`: guia SEO para definir porcentaje de ahorro.
 - `/blog/automatizar-ahorro-en-20-minutos/`: guia SEO para automatizar el ahorro.
+- `/blog/errores-comunes-tarjeta-credito/`: guia SEO para usar tarjeta de credito con mas control.
 - `/blog/5-errores-comunes-al-ahorrar/`: articulo de ejemplo.
 - `/blog/regla-50-30-20/`: articulo de ejemplo.
 - `/blog/3-habitos-diarios-de-gente-millonaria/`: articulo de habitos financieros.
