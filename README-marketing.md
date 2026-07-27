@@ -27,6 +27,29 @@ window.MinutoFinancierosConfig = {
 
 Referencia oficial: https://support.google.com/analytics/answer/9304153
 
+## Exclusion de trafico interno
+
+El sitio permite apagar GA4 en navegadores propios para que las pruebas internas no contaminen eventos futuros.
+
+Activar exclusion en este navegador:
+
+```text
+https://minutofinancieros.com/?mf_internal=1
+```
+
+Desactivar exclusion en este navegador:
+
+```text
+https://minutofinancieros.com/?mf_internal=0
+```
+
+Notas operativas:
+
+- La exclusion queda guardada en `localStorage` del navegador.
+- Afecta visitas futuras desde ese navegador, no limpia datos historicos.
+- Para probar el sitio sin registrar eventos, abrir primero la URL con `mf_internal=1` y despues navegar normalmente.
+- Para volver a verificar GA4 Realtime, abrir `mf_internal=0` antes de hacer la prueba.
+
 ## Cache de config
 
 `assets/site-config.js` no debe tener cache largo, porque ahi vive el Measurement ID.
@@ -42,8 +65,8 @@ Las paginas cargan el config asi:
 
 ```html
 <script src="/assets/site-config.js?v=ga4-20260627" defer></script>
-<script src="/assets/analytics.js?v=lead-magnet-20260726" defer></script>
-<script src="/assets/newsletter.js?v=lead-magnet-20260726" defer></script>
+<script src="/assets/analytics.js?v=internal-filter-20260726" defer></script>
+<script src="/assets/newsletter.js?v=internal-filter-20260726" defer></script>
 ```
 
 Si cambia el config en el futuro, actualizar tambien el query `v=...` para forzar refresh.
@@ -199,6 +222,13 @@ Con `/recursos/` poblado con productos reales, comparar:
 - conversiones reportadas por Amazon Associates.
 
 Objetivo: estimar si conviene enviar trafico directo a Amazon o primero a una pagina propia.
+
+Informe manual recomendado:
+
+- GA4: revisar el evento `click_amazon_resource` y desglosar por `resource_name`, `resource_stage`, `source`, `medium` y `campaign`.
+- Amazon Associates: revisar el reporte del tag `minutofinanci-20` para clicks, items pedidos, items enviados, ingresos y conversion rate.
+- Comparacion: cruzar clicks salientes medidos por GA4 contra clicks/compras reportados por Amazon para estimar perdida entre sitio y Amazon.
+- Trafico propio: excluir pruebas futuras con `?mf_internal=1`; para historico, filtrar manualmente fechas/horarios de pruebas conocidas porque el sitio no puede borrar eventos ya enviados.
 
 ## Newsletter
 

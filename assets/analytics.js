@@ -1,6 +1,43 @@
 (function () {
   var config = window.MinutoFinancierosConfig || {};
   var measurementId = config.gaMeasurementId;
+  var internalTrafficKey = "mf_internal_traffic";
+
+  function getInternalTrafficFlag() {
+    try {
+      return window.localStorage.getItem(internalTrafficKey) === "1";
+    } catch (error) {
+      return false;
+    }
+  }
+
+  function setInternalTrafficFlag(value) {
+    try {
+      if (value) {
+        window.localStorage.setItem(internalTrafficKey, "1");
+      } else {
+        window.localStorage.removeItem(internalTrafficKey);
+      }
+    } catch (error) {
+      return;
+    }
+  }
+
+  var queryParams = new URLSearchParams(window.location.search);
+
+  if (queryParams.get("mf_internal") === "1") {
+    setInternalTrafficFlag(true);
+  }
+
+  if (queryParams.get("mf_internal") === "0") {
+    setInternalTrafficFlag(false);
+  }
+
+  if (getInternalTrafficFlag()) {
+    window.MinutoFinancierosTrack = function () {};
+    window.MinutoFinancierosInternalTraffic = true;
+    return;
+  }
 
   if (!/^G-[A-Z0-9]+$/i.test(measurementId || "")) {
     return;
