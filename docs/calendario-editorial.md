@@ -59,6 +59,7 @@ Objetivo: convertir temas de videos cortos en articulos evergreen que puedan ran
 | 2026-07-27 | Diferencia entre ahorrar e invertir | `/blog/diferencia-entre-ahorrar-e-invertir/` |
 | 2026-07-27 | Como ordenar tus finanzas en una tarde | `/blog/ordenar-finanzas-en-una-tarde/` |
 | 2026-07-27 | Como evitar compras impulsivas | `/blog/como-evitar-compras-impulsivas/` |
+| 2026-07-27 | Fondo de emergencia antes de invertir: por que importa | `/blog/fondo-de-emergencia-antes-de-invertir/` |
 
 ## Plantilla rapida
 

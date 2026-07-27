@@ -58,6 +58,7 @@ Configuracion Cloudflare Pages:
 - `/blog/diferencia-entre-ahorrar-e-invertir/`: guia SEO para comparar ahorro e inversion.
 - `/blog/ordenar-finanzas-en-una-tarde/`: guia SEO para organizar finanzas personales.
 - `/blog/como-evitar-compras-impulsivas/`: guia SEO para controlar compras impulsivas.
+- `/blog/fondo-de-emergencia-antes-de-invertir/`: guia SEO para priorizar fondo de emergencia antes de invertir.
 - `/blog/5-errores-comunes-al-ahorrar/`: articulo de ejemplo.
 - `/blog/regla-50-30-20/`: articulo de ejemplo.
 - `/blog/3-habitos-diarios-de-gente-millonaria/`: articulo de habitos financieros.
