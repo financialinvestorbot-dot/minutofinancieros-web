@@ -51,6 +51,7 @@ Objetivo: convertir temas de videos cortos en articulos evergreen que puedan ran
 | 2026-07-26 | Como armar un presupuesto mensual desde cero | `/blog/presupuesto-mensual-desde-cero/` |
 | 2026-07-26 | Metodo avalancha vs bola de nieve para pagar deudas | `/blog/metodo-avalancha-bola-de-nieve/` |
 | 2026-07-26 | Que son los gastos hormiga y como controlarlos | `/blog/gastos-hormiga/` |
+| 2026-07-27 | Cuanto deberias ahorrar por mes segun tu ingreso | `/blog/cuanto-ahorrar-por-mes-segun-ingreso/` |
 
 ## Plantilla rapida
 

@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const site = "https://minutofinancieros.com";
-const today = "2026-07-26";
+const today = "2026-07-27";
 const posts = JSON.parse(fs.readFileSync("data/blog.json", "utf8"));
 
 const staticUrls = [
