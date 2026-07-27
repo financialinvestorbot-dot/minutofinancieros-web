@@ -57,6 +57,7 @@ Configuracion Cloudflare Pages:
 - `/blog/invertir-con-poco-dinero-por-donde-empezar/`: guia SEO para empezar a invertir con montos chicos.
 - `/blog/diferencia-entre-ahorrar-e-invertir/`: guia SEO para comparar ahorro e inversion.
 - `/blog/ordenar-finanzas-en-una-tarde/`: guia SEO para organizar finanzas personales.
+- `/blog/como-evitar-compras-impulsivas/`: guia SEO para controlar compras impulsivas.
 - `/blog/5-errores-comunes-al-ahorrar/`: articulo de ejemplo.
 - `/blog/regla-50-30-20/`: articulo de ejemplo.
 - `/blog/3-habitos-diarios-de-gente-millonaria/`: articulo de habitos financieros.

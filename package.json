@@ -6,6 +6,7 @@
   "scripts": {
     "build:seo": "node scripts/build-seo.js",
     "check": "node scripts/check-site.js",
+    "metrics:ga4": "node scripts/ga4-report.js",
     "qa": "npm run build:seo && npm run check"
   }
 }

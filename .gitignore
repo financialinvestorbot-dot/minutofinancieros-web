@@ -1,0 +1,4 @@
+reports/
+*.local.json
+service-account*.json
+google-credentials*.json
