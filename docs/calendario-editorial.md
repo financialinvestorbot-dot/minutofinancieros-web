@@ -57,6 +57,7 @@ Objetivo: convertir temas de videos cortos en articulos evergreen que puedan ran
 | 2026-07-27 | Que mirar antes de comprar un curso financiero | `/blog/que-mirar-antes-comprar-curso-financiero/` |
 | 2026-07-27 | Invertir con poco dinero: por donde empezar | `/blog/invertir-con-poco-dinero-por-donde-empezar/` |
 | 2026-07-27 | Diferencia entre ahorrar e invertir | `/blog/diferencia-entre-ahorrar-e-invertir/` |
+| 2026-07-27 | Como ordenar tus finanzas en una tarde | `/blog/ordenar-finanzas-en-una-tarde/` |
 
 ## Plantilla rapida
 
