@@ -66,6 +66,25 @@ Objetivo: convertir temas de videos cortos en articulos evergreen que puedan ran
 | 2026-07-28 | Checklist financiero de fin de mes | `/blog/checklist-financiero-fin-de-mes/` |
 | 2026-07-28 | Como hablar de dinero en pareja sin pelear | `/blog/hablar-de-dinero-en-pareja/` |
 | 2026-07-28 | Que hacer con un ingreso extra | `/blog/que-hacer-con-un-ingreso-extra/` |
+| 2026-07-28 | Senales de que una deuda se esta volviendo peligrosa | `/blog/senales-deuda-peligrosa/` |
+| 2026-07-28 | Libros de finanzas personales para empezar | `/blog/libros-finanzas-personales-para-empezar/` |
+
+## Proximo ciclo editorial
+
+El backlog inicial de 20 temas ya queda cubierto. Para el siguiente ciclo, conviene usar datos de GA4, preguntas de comentarios y clicks en recursos para priorizar. Temas sugeridos:
+
+| Prioridad | Tema | Pilar | CTA sugerida |
+| --- | --- | --- | --- |
+| 1 | Como crear un sistema semanal de dinero en 15 minutos | Productividad financiera | `/checklist-financiero/` |
+| 2 | Que hacer si no llegas a fin de mes | Presupuesto | `/blog/presupuesto-mensual-desde-cero/` |
+| 3 | Como ordenar suscripciones y pagos automaticos | Ahorro | newsletter |
+| 4 | Cuando conviene refinanciar una deuda | Deudas | `/blog/senales-deuda-peligrosa/` |
+| 5 | Como separar dinero de corto y largo plazo | Inversion basica | `/blog/diferencia-entre-ahorrar-e-invertir/` |
+| 6 | Errores al empezar a invertir por ansiedad | Inversion basica | `/recursos/` |
+| 7 | Como preparar un mes caro sin endeudarte | Presupuesto | `/checklist-financiero/` |
+| 8 | Que revisar antes de contratar una tarjeta | Deudas | `/blog/errores-comunes-tarjeta-credito/` |
+| 9 | Como usar un aumento de sueldo sin inflar gastos | Habitos | `/blog/que-hacer-con-un-ingreso-extra/` |
+| 10 | Senales de una recomendacion financiera dudosa | Productividad financiera | `/blog/que-mirar-antes-comprar-curso-financiero/` |
 
 ## Plantilla rapida
 

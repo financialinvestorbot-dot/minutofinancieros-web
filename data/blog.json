@@ -1,5 +1,19 @@
 [
   {
+    "titulo": "Libros de finanzas personales para empezar",
+    "slug": "libros-finanzas-personales-para-empezar",
+    "fecha": "2026-07-28",
+    "categoria": "Recursos",
+    "resumen": "Una guía para elegir libros de hábitos, presupuesto e inversión básica según tu momento actual."
+  },
+  {
+    "titulo": "Señales de que una deuda se está volviendo peligrosa",
+    "slug": "senales-deuda-peligrosa",
+    "fecha": "2026-07-28",
+    "categoria": "Deudas",
+    "resumen": "Alertas tempranas para detectar deuda cara, falta de margen y decisiones tomadas por estrés."
+  },
+  {
     "titulo": "Qué hacer con un ingreso extra",
     "slug": "que-hacer-con-un-ingreso-extra",
     "fecha": "2026-07-28",

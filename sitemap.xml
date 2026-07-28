@@ -37,6 +37,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://minutofinancieros.com/blog/libros-finanzas-personales-para-empezar/</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://minutofinancieros.com/blog/senales-deuda-peligrosa/</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://minutofinancieros.com/blog/que-hacer-con-un-ingreso-extra/</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -46,13 +58,13 @@
     <loc>https://minutofinancieros.com/blog/hablar-de-dinero-en-pareja/</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://minutofinancieros.com/blog/checklist-financiero-fin-de-mes/</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://minutofinancieros.com/blog/inflacion-dinero-quieto/</loc>
