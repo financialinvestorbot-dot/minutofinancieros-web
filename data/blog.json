@@ -1,5 +1,40 @@
 [
   {
+    "titulo": "Qué hacer con un ingreso extra",
+    "slug": "que-hacer-con-un-ingreso-extra",
+    "fecha": "2026-07-28",
+    "categoria": "Ahorro",
+    "resumen": "Una forma simple de decidir entre deuda, fondo de emergencia, objetivos, inversión y disfrute."
+  },
+  {
+    "titulo": "Cómo hablar de dinero en pareja sin pelear",
+    "slug": "hablar-de-dinero-en-pareja",
+    "fecha": "2026-07-28",
+    "categoria": "Hábitos",
+    "resumen": "Ideas simples para hablar de dinero en pareja con datos, acuerdos y menos acusaciones."
+  },
+  {
+    "titulo": "Checklist financiero de fin de mes",
+    "slug": "checklist-financiero-fin-de-mes",
+    "fecha": "2026-07-28",
+    "categoria": "Productividad financiera",
+    "resumen": "Una revisión mensual para ordenar gastos, deudas, suscripciones y próximos pasos."
+  },
+  {
+    "titulo": "Por qué la inflación castiga el dinero quieto",
+    "slug": "inflacion-dinero-quieto",
+    "fecha": "2026-07-28",
+    "categoria": "Inversión básica",
+    "resumen": "Cómo la inflación reduce poder de compra y qué mirar antes de ahorrar o invertir."
+  },
+  {
+    "titulo": "Cómo revisar tus gastos sin vivir obsesionado",
+    "slug": "revisar-gastos-sin-vivir-obsesionado",
+    "fecha": "2026-07-28",
+    "categoria": "Presupuesto",
+    "resumen": "Un método simple para revisar gastos sin mirar cada peso todo el día."
+  },
+  {
     "titulo": "Qué es diversificar y por qué reduce riesgo",
     "slug": "que-es-diversificar-y-por-que-reduce-riesgo",
     "fecha": "2026-07-28",

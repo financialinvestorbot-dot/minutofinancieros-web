@@ -60,6 +60,11 @@ Configuracion Cloudflare Pages:
 - `/blog/como-evitar-compras-impulsivas/`: guia SEO para controlar compras impulsivas.
 - `/blog/fondo-de-emergencia-antes-de-invertir/`: guia SEO para priorizar fondo de emergencia antes de invertir.
 - `/blog/que-es-diversificar-y-por-que-reduce-riesgo/`: guia SEO para entender diversificacion y riesgo.
+- `/blog/revisar-gastos-sin-vivir-obsesionado/`: guia SEO para controlar gastos sin obsesionarse.
+- `/blog/inflacion-dinero-quieto/`: guia SEO sobre inflacion y poder de compra.
+- `/blog/checklist-financiero-fin-de-mes/`: guia SEO para revision financiera mensual.
+- `/blog/hablar-de-dinero-en-pareja/`: guia SEO para finanzas en pareja.
+- `/blog/que-hacer-con-un-ingreso-extra/`: guia SEO para decidir que hacer con ingresos extra.
 - `/blog/5-errores-comunes-al-ahorrar/`: articulo de ejemplo.
 - `/blog/regla-50-30-20/`: articulo de ejemplo.
 - `/blog/3-habitos-diarios-de-gente-millonaria/`: articulo de habitos financieros.

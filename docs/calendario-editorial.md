@@ -61,6 +61,11 @@ Objetivo: convertir temas de videos cortos en articulos evergreen que puedan ran
 | 2026-07-27 | Como evitar compras impulsivas | `/blog/como-evitar-compras-impulsivas/` |
 | 2026-07-27 | Fondo de emergencia antes de invertir: por que importa | `/blog/fondo-de-emergencia-antes-de-invertir/` |
 | 2026-07-28 | Que es diversificar y por que reduce riesgo | `/blog/que-es-diversificar-y-por-que-reduce-riesgo/` |
+| 2026-07-28 | Como revisar tus gastos sin vivir obsesionado | `/blog/revisar-gastos-sin-vivir-obsesionado/` |
+| 2026-07-28 | Por que la inflacion castiga el dinero quieto | `/blog/inflacion-dinero-quieto/` |
+| 2026-07-28 | Checklist financiero de fin de mes | `/blog/checklist-financiero-fin-de-mes/` |
+| 2026-07-28 | Como hablar de dinero en pareja sin pelear | `/blog/hablar-de-dinero-en-pareja/` |
+| 2026-07-28 | Que hacer con un ingreso extra | `/blog/que-hacer-con-un-ingreso-extra/` |
 
 ## Plantilla rapida
 
