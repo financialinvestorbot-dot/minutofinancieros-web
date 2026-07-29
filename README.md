@@ -80,6 +80,9 @@ Configuracion Cloudflare Pages:
 - `/blog/fondo-para-gastos-anuales/`: guia SEO para anticipar gastos anuales.
 - `/blog/muchas-cuotas-abiertas/`: guia SEO para ordenar compras en cuotas.
 - `/blog/elegir-meta-financiera-realista/`: guia SEO para definir metas financieras realistas.
+- `/blog/que-mirar-antes-comprar-libro-financiero/`: guia SEO para elegir libros financieros.
+- `/blog/evitar-comparar-tus-finanzas/`: guia SEO para evitar comparacion financiera.
+- `/blog/que-es-liquidez-y-por-que-importa/`: guia SEO sobre liquidez y plazos.
 - `/blog/5-errores-comunes-al-ahorrar/`: articulo de ejemplo.
 - `/blog/regla-50-30-20/`: articulo de ejemplo.
 - `/blog/3-habitos-diarios-de-gente-millonaria/`: articulo de habitos financieros.

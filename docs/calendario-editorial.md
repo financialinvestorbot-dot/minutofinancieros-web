@@ -81,6 +81,9 @@ Objetivo: convertir temas de videos cortos en articulos evergreen que puedan ran
 | 2026-07-29 | Como armar un fondo para gastos anuales | `/blog/fondo-para-gastos-anuales/` |
 | 2026-07-29 | Que hacer cuando tenes muchas cuotas abiertas | `/blog/muchas-cuotas-abiertas/` |
 | 2026-07-29 | Como elegir una meta financiera realista | `/blog/elegir-meta-financiera-realista/` |
+| 2026-07-29 | Que mirar antes de comprar un libro financiero | `/blog/que-mirar-antes-comprar-libro-financiero/` |
+| 2026-07-29 | Como evitar comparar tus finanzas con otras personas | `/blog/evitar-comparar-tus-finanzas/` |
+| 2026-07-29 | Que es liquidez y por que importa | `/blog/que-es-liquidez-y-por-que-importa/` |
 
 ## Ciclo editorial 2 publicado
 
