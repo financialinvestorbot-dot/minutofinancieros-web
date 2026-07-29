@@ -8,6 +8,7 @@
     "check": "node scripts/check-site.js",
     "metrics:ga4": "node scripts/ga4-report.js",
     "metrics:summary": "node scripts/marketing-summary.js",
+    "ai:editorial": "node scripts/claude-editorial-automation.js",
     "qa": "npm run build:seo && npm run check"
   }
 }

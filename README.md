@@ -109,10 +109,12 @@ Configuracion Cloudflare Pages:
 - `feed.xml`: feed RSS del blog, generado desde `data/blog.json`.
 - `docs/calendario-editorial.md`: backlog editorial del blog y criterios de medicion.
 - `docs/secuencia-bienvenida-brevo.md`: emails iniciales sugeridos para automatizar en Brevo.
+- `docs/automatizaciones-claude-google.md`: flujo para usar GA4 y Claude en Google Cloud en decisiones editoriales.
 - `scripts/build-seo.js`: regenera `sitemap.xml` y `feed.xml` desde `data/blog.json`.
 - `scripts/check-site.js`: valida JSON, RSS, sitemap, canonical, redirects, footer legal, schema de articulos, links afiliados y mojibake.
 - `scripts/ga4-report.js`: genera reportes GA4 en `reports/` usando GA4 Data API.
 - `scripts/marketing-summary.js`: resume GA4 y opcionalmente cruza un CSV de Amazon Associates.
+- `scripts/claude-editorial-automation.js`: arma un prompt o consulta Claude para proponer prioridades editoriales.
 - `package.json`: comandos de SEO, QA y metricas.
 - `sitemap.xml`: sitemap estatico.
 - `robots.txt`: permite indexacion del sitio.

@@ -293,6 +293,16 @@ Estado editorial:
 - ciclo editorial 2 publicado;
 - ciclo editorial 3 sugerido en `docs/calendario-editorial.md`.
 
+Automatizacion editorial:
+
+```powershell
+npm run metrics:ga4
+npm run metrics:summary
+npm run ai:editorial -- --prompt-only
+```
+
+Detalles: `docs/automatizaciones-claude-google.md`.
+
 ## Checklist despues de publicar cambios de marketing
 
 - Verificar `https://minutofinancieros.com/`.
