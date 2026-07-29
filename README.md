@@ -73,6 +73,10 @@ Configuracion Cloudflare Pages:
 - `/blog/cuando-conviene-refinanciar-deuda/`: guia SEO para evaluar refinanciacion de deudas.
 - `/blog/separar-dinero-corto-largo-plazo/`: guia SEO para separar dinero por plazo y riesgo.
 - `/blog/errores-invertir-por-ansiedad/`: guia SEO para evitar errores al invertir apurado.
+- `/blog/preparar-mes-caro-sin-endeudarte/`: guia SEO para anticipar gastos grandes.
+- `/blog/que-revisar-antes-contratar-tarjeta/`: guia SEO para evaluar tarjetas antes de contratarlas.
+- `/blog/usar-aumento-sueldo-sin-inflar-gastos/`: guia SEO para aprovechar aumentos de sueldo.
+- `/blog/senales-recomendacion-financiera-dudosa/`: guia SEO para detectar recomendaciones dudosas.
 - `/blog/5-errores-comunes-al-ahorrar/`: articulo de ejemplo.
 - `/blog/regla-50-30-20/`: articulo de ejemplo.
 - `/blog/3-habitos-diarios-de-gente-millonaria/`: articulo de habitos financieros.

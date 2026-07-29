@@ -74,6 +74,10 @@ Objetivo: convertir temas de videos cortos en articulos evergreen que puedan ran
 | 2026-07-28 | Cuando conviene refinanciar una deuda | `/blog/cuando-conviene-refinanciar-deuda/` |
 | 2026-07-28 | Como separar dinero de corto y largo plazo | `/blog/separar-dinero-corto-largo-plazo/` |
 | 2026-07-28 | Errores al empezar a invertir por ansiedad | `/blog/errores-invertir-por-ansiedad/` |
+| 2026-07-29 | Como preparar un mes caro sin endeudarte | `/blog/preparar-mes-caro-sin-endeudarte/` |
+| 2026-07-29 | Que revisar antes de contratar una tarjeta | `/blog/que-revisar-antes-contratar-tarjeta/` |
+| 2026-07-29 | Como usar un aumento de sueldo sin inflar gastos | `/blog/usar-aumento-sueldo-sin-inflar-gastos/` |
+| 2026-07-29 | Senales de una recomendacion financiera dudosa | `/blog/senales-recomendacion-financiera-dudosa/` |
 
 ## Proximo ciclo editorial
 
