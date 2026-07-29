@@ -68,6 +68,9 @@ Objetivo: convertir temas de videos cortos en articulos evergreen que puedan ran
 | 2026-07-28 | Que hacer con un ingreso extra | `/blog/que-hacer-con-un-ingreso-extra/` |
 | 2026-07-28 | Senales de que una deuda se esta volviendo peligrosa | `/blog/senales-deuda-peligrosa/` |
 | 2026-07-28 | Libros de finanzas personales para empezar | `/blog/libros-finanzas-personales-para-empezar/` |
+| 2026-07-28 | Como crear un sistema semanal de dinero en 15 minutos | `/blog/sistema-semanal-dinero-15-minutos/` |
+| 2026-07-28 | Que hacer si no llegas a fin de mes | `/blog/que-hacer-si-no-llegas-a-fin-de-mes/` |
+| 2026-07-28 | Como ordenar suscripciones y pagos automaticos | `/blog/ordenar-suscripciones-pagos-automaticos/` |
 
 ## Proximo ciclo editorial
 

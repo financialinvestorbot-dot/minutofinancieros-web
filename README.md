@@ -67,6 +67,9 @@ Configuracion Cloudflare Pages:
 - `/blog/que-hacer-con-un-ingreso-extra/`: guia SEO para decidir que hacer con ingresos extra.
 - `/blog/senales-deuda-peligrosa/`: guia SEO para detectar deuda peligrosa.
 - `/blog/libros-finanzas-personales-para-empezar/`: guia SEO para elegir libros financieros iniciales.
+- `/blog/sistema-semanal-dinero-15-minutos/`: guia SEO para revision semanal de finanzas.
+- `/blog/que-hacer-si-no-llegas-a-fin-de-mes/`: guia SEO para priorizar cuando el mes queda corto.
+- `/blog/ordenar-suscripciones-pagos-automaticos/`: guia SEO para ordenar suscripciones y pagos recurrentes.
 - `/blog/5-errores-comunes-al-ahorrar/`: articulo de ejemplo.
 - `/blog/regla-50-30-20/`: articulo de ejemplo.
 - `/blog/3-habitos-diarios-de-gente-millonaria/`: articulo de habitos financieros.
