@@ -70,6 +70,9 @@ Configuracion Cloudflare Pages:
 - `/blog/sistema-semanal-dinero-15-minutos/`: guia SEO para revision semanal de finanzas.
 - `/blog/que-hacer-si-no-llegas-a-fin-de-mes/`: guia SEO para priorizar cuando el mes queda corto.
 - `/blog/ordenar-suscripciones-pagos-automaticos/`: guia SEO para ordenar suscripciones y pagos recurrentes.
+- `/blog/cuando-conviene-refinanciar-deuda/`: guia SEO para evaluar refinanciacion de deudas.
+- `/blog/separar-dinero-corto-largo-plazo/`: guia SEO para separar dinero por plazo y riesgo.
+- `/blog/errores-invertir-por-ansiedad/`: guia SEO para evitar errores al invertir apurado.
 - `/blog/5-errores-comunes-al-ahorrar/`: articulo de ejemplo.
 - `/blog/regla-50-30-20/`: articulo de ejemplo.
 - `/blog/3-habitos-diarios-de-gente-millonaria/`: articulo de habitos financieros.

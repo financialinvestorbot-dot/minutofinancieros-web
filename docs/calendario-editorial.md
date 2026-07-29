@@ -71,6 +71,9 @@ Objetivo: convertir temas de videos cortos en articulos evergreen que puedan ran
 | 2026-07-28 | Como crear un sistema semanal de dinero en 15 minutos | `/blog/sistema-semanal-dinero-15-minutos/` |
 | 2026-07-28 | Que hacer si no llegas a fin de mes | `/blog/que-hacer-si-no-llegas-a-fin-de-mes/` |
 | 2026-07-28 | Como ordenar suscripciones y pagos automaticos | `/blog/ordenar-suscripciones-pagos-automaticos/` |
+| 2026-07-28 | Cuando conviene refinanciar una deuda | `/blog/cuando-conviene-refinanciar-deuda/` |
+| 2026-07-28 | Como separar dinero de corto y largo plazo | `/blog/separar-dinero-corto-largo-plazo/` |
+| 2026-07-28 | Errores al empezar a invertir por ansiedad | `/blog/errores-invertir-por-ansiedad/` |
 
 ## Proximo ciclo editorial
 
