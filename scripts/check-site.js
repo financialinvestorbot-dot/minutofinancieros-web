@@ -104,6 +104,35 @@ function checkCanonical(file, expectedUrl) {
   }
 }
 
+function checkFooterLegal(file) {
+  const html = read(file);
+
+  if (!html.includes('href="/terminos/"') || !html.includes('href="/privacidad/"')) {
+    fail(`Missing legal footer links in ${file}`);
+  }
+}
+
+function checkArticleMetadata(post) {
+  const file = `blog/${post.slug}/index.html`;
+  const html = read(file);
+  const canonical = `https://minutofinancieros.com/blog/${post.slug}/`;
+
+  checkCanonical(file, canonical);
+  checkFooterLegal(file);
+
+  if (!html.includes('<meta property="og:type" content="article">')) {
+    fail(`Missing article og:type in ${file}`);
+  }
+
+  if (!html.includes('"@type": "Article"')) {
+    fail(`Missing Article schema in ${file}`);
+  }
+
+  if (!html.includes("Este contenido es educativo")) {
+    fail(`Missing educational disclaimer in ${file}`);
+  }
+}
+
 for (const file of [...requiredRoutes, ...requiredFiles]) {
   assertFile(file);
 }
@@ -156,12 +185,19 @@ checkXmlShape("sitemap.xml", "urlset");
 checkXmlShape("feed.xml", "rss");
 
 const sitemap = read("sitemap.xml");
+const redirects = read("_redirects");
 for (const post of posts) {
   const url = `https://minutofinancieros.com/blog/${post.slug}/`;
 
   if (!sitemap.includes(url)) {
     fail(`Sitemap missing blog URL: ${url}`);
   }
+
+  if (!redirects.includes(`/blog/${post.slug} /blog/${post.slug}/ 301`)) {
+    fail(`Redirects missing slash redirect for blog slug: ${post.slug}`);
+  }
+
+  checkArticleMetadata(post);
 }
 
 if (sitemap.includes("/gracias/")) {
@@ -192,6 +228,20 @@ checkCanonical("recursos/index.html", "https://minutofinancieros.com/recursos/")
 checkCanonical("newsletter/index.html", "https://minutofinancieros.com/newsletter/");
 checkCanonical("checklist-financiero/index.html", "https://minutofinancieros.com/checklist-financiero/");
 checkCanonical("blog/index.html", "https://minutofinancieros.com/blog/");
+
+for (const file of [
+  "index.html",
+  "links/index.html",
+  "recursos/index.html",
+  "newsletter/index.html",
+  "checklist-financiero/index.html",
+  "blog/index.html",
+  "sobre/index.html",
+  "terminos/index.html",
+  "privacidad/index.html"
+]) {
+  checkFooterLegal(file);
+}
 
 if (!read("index.html").includes('rel="alternate" type="application/rss+xml"')) {
   fail("index.html missing RSS alternate link");

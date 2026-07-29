@@ -79,9 +79,9 @@ Objetivo: convertir temas de videos cortos en articulos evergreen que puedan ran
 | 2026-07-29 | Como usar un aumento de sueldo sin inflar gastos | `/blog/usar-aumento-sueldo-sin-inflar-gastos/` |
 | 2026-07-29 | Senales de una recomendacion financiera dudosa | `/blog/senales-recomendacion-financiera-dudosa/` |
 
-## Proximo ciclo editorial
+## Ciclo editorial 2 publicado
 
-El backlog inicial de 20 temas ya queda cubierto. Para el siguiente ciclo, conviene usar datos de GA4, preguntas de comentarios y clicks en recursos para priorizar. Temas sugeridos:
+El backlog inicial de 20 temas ya queda cubierto y el segundo ciclo tambien queda publicado. La proxima tanda conviene priorizarla con datos de GA4, preguntas de comentarios y clicks en recursos.
 
 | Prioridad | Tema | Pilar | CTA sugerida |
 | --- | --- | --- | --- |
@@ -95,6 +95,21 @@ El backlog inicial de 20 temas ya queda cubierto. Para el siguiente ciclo, convi
 | 8 | Que revisar antes de contratar una tarjeta | Deudas | `/blog/errores-comunes-tarjeta-credito/` |
 | 9 | Como usar un aumento de sueldo sin inflar gastos | Habitos | `/blog/que-hacer-con-un-ingreso-extra/` |
 | 10 | Senales de una recomendacion financiera dudosa | Productividad financiera | `/blog/que-mirar-antes-comprar-curso-financiero/` |
+
+## Ciclo editorial 3 sugerido
+
+| Prioridad | Tema | Pilar | CTA sugerida |
+| --- | --- | --- | --- |
+| 1 | Como armar un fondo para gastos anuales | Presupuesto | `/blog/preparar-mes-caro-sin-endeudarte/` |
+| 2 | Que hacer cuando tenes muchas cuotas abiertas | Deudas | `/blog/senales-deuda-peligrosa/` |
+| 3 | Como elegir una meta financiera realista | Habitos | `/checklist-financiero/` |
+| 4 | Que mirar antes de comprar un libro financiero | Recursos | `/recursos/` |
+| 5 | Como evitar comparar tus finanzas con otras personas | Habitos | newsletter |
+| 6 | Que es liquidez y por que importa | Inversion basica | `/blog/separar-dinero-corto-largo-plazo/` |
+| 7 | Como hacer una auditoria simple de gastos fijos | Ahorro | `/blog/ordenar-suscripciones-pagos-automaticos/` |
+| 8 | Cuando conviene cancelar una suscripcion anual | Ahorro | `/newsletter/` |
+| 9 | Como preparar tus finanzas para vacaciones | Presupuesto | `/blog/preparar-mes-caro-sin-endeudarte/` |
+| 10 | Senales de que estas tomando decisiones por miedo | Productividad financiera | `/blog/errores-invertir-por-ansiedad/` |
 
 ## Plantilla rapida
 

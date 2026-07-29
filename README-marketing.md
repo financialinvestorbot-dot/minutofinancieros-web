@@ -287,6 +287,12 @@ Plan recomendado:
 - cerrar cada articulo con CTA medible;
 - revisar mensualmente `blog_article_click`, `blog_cta_click`, `newsletter_success` y `click_amazon_resource`.
 
+Estado editorial:
+
+- backlog inicial publicado;
+- ciclo editorial 2 publicado;
+- ciclo editorial 3 sugerido en `docs/calendario-editorial.md`.
+
 ## Checklist despues de publicar cambios de marketing
 
 - Verificar `https://minutofinancieros.com/`.
