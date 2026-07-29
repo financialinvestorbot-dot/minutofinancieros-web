@@ -77,6 +77,9 @@ Configuracion Cloudflare Pages:
 - `/blog/que-revisar-antes-contratar-tarjeta/`: guia SEO para evaluar tarjetas antes de contratarlas.
 - `/blog/usar-aumento-sueldo-sin-inflar-gastos/`: guia SEO para aprovechar aumentos de sueldo.
 - `/blog/senales-recomendacion-financiera-dudosa/`: guia SEO para detectar recomendaciones dudosas.
+- `/blog/fondo-para-gastos-anuales/`: guia SEO para anticipar gastos anuales.
+- `/blog/muchas-cuotas-abiertas/`: guia SEO para ordenar compras en cuotas.
+- `/blog/elegir-meta-financiera-realista/`: guia SEO para definir metas financieras realistas.
 - `/blog/5-errores-comunes-al-ahorrar/`: articulo de ejemplo.
 - `/blog/regla-50-30-20/`: articulo de ejemplo.
 - `/blog/3-habitos-diarios-de-gente-millonaria/`: articulo de habitos financieros.

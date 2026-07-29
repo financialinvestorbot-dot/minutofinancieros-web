@@ -78,6 +78,9 @@ Objetivo: convertir temas de videos cortos en articulos evergreen que puedan ran
 | 2026-07-29 | Que revisar antes de contratar una tarjeta | `/blog/que-revisar-antes-contratar-tarjeta/` |
 | 2026-07-29 | Como usar un aumento de sueldo sin inflar gastos | `/blog/usar-aumento-sueldo-sin-inflar-gastos/` |
 | 2026-07-29 | Senales de una recomendacion financiera dudosa | `/blog/senales-recomendacion-financiera-dudosa/` |
+| 2026-07-29 | Como armar un fondo para gastos anuales | `/blog/fondo-para-gastos-anuales/` |
+| 2026-07-29 | Que hacer cuando tenes muchas cuotas abiertas | `/blog/muchas-cuotas-abiertas/` |
+| 2026-07-29 | Como elegir una meta financiera realista | `/blog/elegir-meta-financiera-realista/` |
 
 ## Ciclo editorial 2 publicado
 
