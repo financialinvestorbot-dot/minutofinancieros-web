@@ -19,6 +19,18 @@ reports/ga4-AAAA-MM-DD.md
 reports/ga4-AAAA-MM-DD.json
 ```
 
+Resumen operativo:
+
+```powershell
+npm run metrics:summary
+```
+
+Ese comando toma el ultimo `reports/ga4-AAAA-MM-DD.json` disponible y genera:
+
+```text
+reports/marketing-summary-AAAA-MM-DD.md
+```
+
 ## Datos necesarios
 
 Variables:
@@ -75,6 +87,22 @@ Propiedad por argumento:
 ```powershell
 npm run metrics:ga4 -- --property=123456789 --start=30daysAgo --end=yesterday
 ```
+
+Resumen a partir de un reporte GA4 especifico:
+
+```powershell
+npm run metrics:summary -- --ga4=reports/ga4-2026-07-29.json
+```
+
+Resumen cruzando GA4 con un export CSV de Amazon Associates:
+
+```powershell
+npm run metrics:summary -- --ga4=reports/ga4-2026-07-29.json --amazon=reports/amazon-associates-julio.csv
+```
+
+El CSV de Amazon puede venir del reporte de Amazon Associates o Content Insights. El script intenta detectar columnas comunes como clicks, ordered items, shipped items, earnings, fees o commission.
+
+Importante: el sitio ya permite excluir pruebas propias antes de que entren a GA4 usando `?mf_internal=1`. Si una prueba ya fue enviada a GA4, no se puede borrar desde el sitio; hay que filtrarla por fecha, hora, fuente o dispositivo al analizar.
 
 ## Custom dimensions
 

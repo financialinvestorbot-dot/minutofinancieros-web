@@ -105,7 +105,9 @@ Configuracion Cloudflare Pages:
 - `docs/secuencia-bienvenida-brevo.md`: emails iniciales sugeridos para automatizar en Brevo.
 - `scripts/build-seo.js`: regenera `sitemap.xml` y `feed.xml` desde `data/blog.json`.
 - `scripts/check-site.js`: valida JSON, RSS, sitemap, canonical, links afiliados y mojibake.
-- `package.json`: comandos `npm run build:seo`, `npm run check` y `npm run qa`.
+- `scripts/ga4-report.js`: genera reportes GA4 en `reports/` usando GA4 Data API.
+- `scripts/marketing-summary.js`: resume GA4 y opcionalmente cruza un CSV de Amazon Associates.
+- `package.json`: comandos de SEO, QA y metricas.
 - `sitemap.xml`: sitemap estatico.
 - `robots.txt`: permite indexacion del sitio.
 - `_headers`: headers de seguridad y cache.

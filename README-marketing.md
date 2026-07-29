@@ -230,6 +230,25 @@ Informe manual recomendado:
 - Comparacion: cruzar clicks salientes medidos por GA4 contra clicks/compras reportados por Amazon para estimar perdida entre sitio y Amazon.
 - Trafico propio: excluir pruebas futuras con `?mf_internal=1`; para historico, filtrar manualmente fechas/horarios de pruebas conocidas porque el sitio no puede borrar eventos ya enviados.
 
+Resumen automatizado:
+
+```powershell
+npm run metrics:ga4
+npm run metrics:summary
+```
+
+Con export CSV de Amazon Associates:
+
+```powershell
+npm run metrics:summary -- --amazon=reports/amazon-associates.csv
+```
+
+Salidas esperadas:
+
+- `reports/ga4-AAAA-MM-DD.md`
+- `reports/ga4-AAAA-MM-DD.json`
+- `reports/marketing-summary-AAAA-MM-DD.md`
+
 ## Newsletter
 
 El formulario del footer esta documentado en `docs/newsletter.md`.
