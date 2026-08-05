@@ -89,6 +89,33 @@
 
   window.MinutoFinancierosTrack = trackEvent;
 
+  function currentArticleSlug() {
+    var match = window.location.pathname.match(/^\/blog\/([^/]+)\/?$/);
+    return match ? match[1] : "";
+  }
+
+  function destinationType(url) {
+    var parsedUrl;
+
+    try {
+      parsedUrl = new URL(url, window.location.origin);
+    } catch (error) {
+      return "unknown";
+    }
+
+    if (parsedUrl.hostname !== window.location.hostname) {
+      return "external";
+    }
+
+    if (parsedUrl.pathname.indexOf("/recursos/") === 0) return "resources";
+    if (parsedUrl.pathname.indexOf("/newsletter/") === 0) return "newsletter";
+    if (parsedUrl.pathname.indexOf("/checklist-financiero/") === 0) return "lead_magnet";
+    if (parsedUrl.pathname.indexOf("/blog/") === 0) return "related_article";
+    if (parsedUrl.pathname.indexOf("/links/") === 0) return "social_links";
+
+    return "internal";
+  }
+
   if (window.location.pathname === "/gracias/") {
     trackEvent("newsletter_thank_you_view", {
       page_path: window.location.pathname
@@ -121,10 +148,18 @@
     var blogCtaLink = event.target.closest(".article-cta a");
 
     if (blogCtaLink) {
+      var ctaActions = blogCtaLink.closest(".article-cta-actions");
+      var ctaLinks = ctaActions ? Array.prototype.slice.call(ctaActions.querySelectorAll("a")) : [];
+      var ctaIndex = ctaLinks.indexOf(blogCtaLink);
+
       trackEvent("blog_cta_click", {
         link_text: blogCtaLink.textContent.trim(),
         link_url: blogCtaLink.href || "",
-        page_path: window.location.pathname
+        page_path: window.location.pathname,
+        article_slug: currentArticleSlug(),
+        cta_type: destinationType(blogCtaLink.href || ""),
+        cta_position: ctaIndex === 0 ? "primary" : ctaIndex > 0 ? "secondary" : "unknown",
+        destination: blogCtaLink.getAttribute("href") || blogCtaLink.href || ""
       });
     }
 

@@ -214,6 +214,15 @@ async function main() {
     limit: 20
   }))));
 
+  reports.push(await optionalReport("blog-ctas", () => runReport(accessToken, propertyId, reportRequest({
+    startDate,
+    endDate,
+    dimensions: ["eventName", "customEvent:article_slug", "customEvent:cta_type", "customEvent:cta_position", "customEvent:destination"],
+    metrics: ["eventCount", "activeUsers"],
+    dimensionFilter: stringFilter("eventName", "blog_cta_click"),
+    limit: 50
+  }))));
+
   const generatedAt = new Date().toISOString();
   const output = {
     generatedAt,

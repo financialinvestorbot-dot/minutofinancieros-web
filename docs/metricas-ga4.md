@@ -112,7 +112,14 @@ Para que el reporte de Amazon pueda desglosar producto y etapa, registrar en GA4
 - `resource_stage`
 - `resource_category`
 
-Si no están registrados, GA4 puede seguir contando `click_amazon_resource`, pero el desglose por producto puede fallar o no estar disponible en Data API.
+Para que el reporte de CTAs del blog pueda separar articulo, objetivo y ubicacion, registrar tambien:
+
+- `article_slug`
+- `cta_type`
+- `cta_position`
+- `destination`
+
+Si no están registrados, GA4 puede seguir contando los eventos, pero el desglose por producto, articulo o CTA puede fallar o no estar disponible en Data API.
 
 ## Amazon Associates
 
