@@ -120,6 +120,21 @@ function extractTextFromClaude(payload) {
   return text || JSON.stringify(payload, null, 2);
 }
 
+function extractTextFromOpenAI(payload) {
+  if (payload.output_text) {
+    return payload.output_text.trim();
+  }
+
+  const text = (payload.output || [])
+    .flatMap((item) => item.content || [])
+    .filter((item) => item.type === "output_text" || item.type === "text")
+    .map((item) => item.text)
+    .join("\n")
+    .trim();
+
+  return text || JSON.stringify(payload, null, 2);
+}
+
 async function callVertexClaude(prompt) {
   const project = process.env.GOOGLE_CLOUD_PROJECT || process.env.GCLOUD_PROJECT || arg("project");
   const location = process.env.GOOGLE_CLOUD_LOCATION || process.env.CLAUDE_VERTEX_LOCATION || arg("location", "global");
@@ -150,6 +165,35 @@ async function callVertexClaude(prompt) {
   }
 
   return extractTextFromClaude(payload);
+}
+
+async function callOpenAI(prompt) {
+  const apiKey = process.env.OPENAI_API_KEY;
+  const model = process.env.OPENAI_MODEL || arg("model", "gpt-5.6-luna");
+
+  if (!apiKey) {
+    throw new Error("Set OPENAI_API_KEY for OpenAI editorial automation.");
+  }
+
+  const response = await fetch("https://api.openai.com/v1/responses", {
+    method: "POST",
+    headers: {
+      authorization: `Bearer ${apiKey}`,
+      "content-type": "application/json"
+    },
+    body: JSON.stringify({
+      model,
+      input: prompt,
+      max_output_tokens: Number(arg("max-output-tokens", process.env.OPENAI_MAX_OUTPUT_TOKENS || "1800"))
+    })
+  });
+
+  const payload = await response.json();
+  if (!response.ok) {
+    throw new Error(`OpenAI request failed: ${JSON.stringify(payload)}`);
+  }
+
+  return extractTextFromOpenAI(payload);
 }
 
 async function callAnthropicClaude(prompt) {
@@ -232,10 +276,12 @@ async function main() {
     return;
   }
 
-  const provider = (process.env.CLAUDE_PROVIDER || arg("provider", "vertex")).toLowerCase();
-  const text = provider === "anthropic"
-    ? await callAnthropicClaude(prompt)
-    : await callVertexClaude(prompt);
+  const provider = (process.env.AI_PROVIDER || process.env.CLAUDE_PROVIDER || arg("provider", "vertex")).toLowerCase();
+  const text = provider === "openai"
+    ? await callOpenAI(prompt)
+    : provider === "anthropic"
+      ? await callAnthropicClaude(prompt)
+      : await callVertexClaude(prompt);
 
   fs.writeFileSync(outPath, text);
   console.log(`Generated Claude editorial plan: ${outPath}`);

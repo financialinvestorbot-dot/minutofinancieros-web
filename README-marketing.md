@@ -301,6 +301,15 @@ npm run metrics:summary
 npm run ai:editorial -- --prompt-only
 ```
 
+Fallback OpenAI hasta que Google apruebe cuotas de Sonnet:
+
+```powershell
+$env:AI_PROVIDER="openai"
+$env:OPENAI_API_KEY="sk-..."
+$env:OPENAI_MODEL="gpt-5.6-luna"
+npm run ai:editorial
+```
+
 Detalles: `docs/automatizaciones-claude-google.md`.
 
 ## Checklist despues de publicar cambios de marketing
