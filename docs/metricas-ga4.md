@@ -36,7 +36,7 @@ reports/marketing-summary-AAAA-MM-DD.md
 Variables:
 
 ```powershell
-$env:GA4_PROPERTY_ID=""
+$env:GA4_PROPERTY_ID="543474730"
 $env:GOOGLE_APPLICATION_CREDENTIALS="G:\ruta\service-account.json"
 ```
 
@@ -47,6 +47,12 @@ $env:GOOGLE_SERVICE_ACCOUNT_JSON='{"type":"service_account",...}'
 ```
 
 Importante: `GA4_PROPERTY_ID` es el ID de la propiedad GA4, no el Measurement ID `G-4FQBKPVL8M` ni necesariamente el ID de flujo `15162607085`.
+
+Propiedad actual detectada en GA4:
+
+```text
+GA4_PROPERTY_ID=543474730
+```
 
 Dónde verlo:
 
@@ -61,6 +67,21 @@ GA4 > Administrar > Configuración de propiedad > Detalles de propiedad > ID de 
 3. Crear una service account.
 4. Descargar el JSON de credenciales.
 5. En GA4, agregar el email de la service account como usuario de la propiedad con rol de lectura.
+
+Comando sugerido para este proyecto:
+
+```powershell
+$env:GA4_PROPERTY_ID="543474730"
+$env:GOOGLE_APPLICATION_CREDENTIALS="G:\WorkIA\Faceles\Canales\MinutoFinancieros-Secrets\google-claude-service-account.json"
+npm run metrics:ga4
+npm run metrics:summary
+```
+
+Si el JSON usado para Claude no aparece como usuario autorizado en GA4, crear una service account separada para Analytics o agregar el `client_email` de ese JSON en:
+
+```text
+GA4 > Administrar > Gestión de acceso a la propiedad
+```
 
 Referencias oficiales:
 
