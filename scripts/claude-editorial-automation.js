@@ -260,7 +260,7 @@ async function main() {
   const blogPath = arg("blog", "data/blog.json");
   const latestSummary = latestFile("reports", /^marketing-summary-\d{4}-\d{2}-\d{2}\.md$/);
   const summaryPath = arg("summary", latestSummary ? path.join("reports", latestSummary) : "");
-  const outPath = arg("out", path.join("reports", `claude-editorial-plan-${new Date().toISOString().slice(0, 10)}.md`));
+  const outPath = arg("out", path.join("reports", `ai-editorial-plan-${new Date().toISOString().slice(0, 10)}.md`));
 
   const prompt = buildPrompt({
     calendar: readIfExists(calendarPath),
@@ -284,7 +284,7 @@ async function main() {
       : await callVertexClaude(prompt);
 
   fs.writeFileSync(outPath, text);
-  console.log(`Generated Claude editorial plan: ${outPath}`);
+  console.log(`Generated AI editorial plan with ${provider}: ${outPath}`);
 }
 
 main().catch((error) => {

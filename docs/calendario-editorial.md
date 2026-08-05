@@ -104,18 +104,20 @@ El backlog inicial de 20 temas ya queda cubierto y el segundo ciclo tambien qued
 
 ## Ciclo editorial 3 sugerido
 
-| Prioridad | Tema | Pilar | CTA sugerida |
-| --- | --- | --- | --- |
-| 1 | Como armar un fondo para gastos anuales | Presupuesto | `/blog/preparar-mes-caro-sin-endeudarte/` |
-| 2 | Que hacer cuando tenes muchas cuotas abiertas | Deudas | `/blog/senales-deuda-peligrosa/` |
-| 3 | Como elegir una meta financiera realista | Habitos | `/checklist-financiero/` |
-| 4 | Que mirar antes de comprar un libro financiero | Recursos | `/recursos/` |
-| 5 | Como evitar comparar tus finanzas con otras personas | Habitos | newsletter |
-| 6 | Que es liquidez y por que importa | Inversion basica | `/blog/separar-dinero-corto-largo-plazo/` |
-| 7 | Como hacer una auditoria simple de gastos fijos | Ahorro | `/blog/ordenar-suscripciones-pagos-automaticos/` |
-| 8 | Cuando conviene cancelar una suscripcion anual | Ahorro | `/newsletter/` |
-| 9 | Como preparar tus finanzas para vacaciones | Presupuesto | `/blog/preparar-mes-caro-sin-endeudarte/` |
-| 10 | Senales de que estas tomando decisiones por miedo | Productividad financiera | `/blog/errores-invertir-por-ansiedad/` |
+Reordenado con el primer reporte generado por OpenAI (`gpt-5.6-luna`) el 2026-08-05: se priorizo auditoria de gastos fijos por intencion practica y conversion hacia checklist.
+
+| Prioridad | Tema | Pilar | CTA sugerida | Estado |
+| --- | --- | --- | --- | --- |
+| 1 | Como armar un fondo para gastos anuales | Presupuesto | `/blog/preparar-mes-caro-sin-endeudarte/` | Publicado 2026-07-29 |
+| 2 | Que hacer cuando tenes muchas cuotas abiertas | Deudas | `/blog/senales-deuda-peligrosa/` | Publicado 2026-07-29 |
+| 3 | Como elegir una meta financiera realista | Habitos | `/checklist-financiero/` | Publicado 2026-07-29 |
+| 4 | Que mirar antes de comprar un libro financiero | Recursos | `/recursos/` | Publicado 2026-07-29 |
+| 5 | Como evitar comparar tus finanzas con otras personas | Habitos | newsletter | Publicado 2026-07-29 |
+| 6 | Que es liquidez y por que importa | Inversion basica | `/blog/separar-dinero-corto-largo-plazo/` | Publicado 2026-07-29 |
+| 7 | Como hacer una auditoria simple de gastos fijos | Presupuesto | `/checklist-financiero/` | Publicado 2026-08-05 |
+| 8 | Cuando conviene cancelar una suscripcion anual | Ahorro | `/newsletter/` | Pendiente |
+| 9 | Como preparar tus finanzas para vacaciones | Presupuesto | `/blog/preparar-mes-caro-sin-endeudarte/` | Pendiente |
+| 10 | Senales de que estas tomando decisiones por miedo | Productividad financiera | `/blog/errores-invertir-por-ansiedad/` | Pendiente |
 
 ## Plantilla rapida
 

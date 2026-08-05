@@ -100,7 +100,7 @@ OpenAI usa la Responses API (`POST /v1/responses`) para este flujo.
 ## Salidas
 
 ```text
-reports/claude-editorial-plan-AAAA-MM-DD.md
+reports/ai-editorial-plan-AAAA-MM-DD.md
 ```
 
 El reporte esperado incluye:

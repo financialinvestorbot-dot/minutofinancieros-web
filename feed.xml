@@ -6,7 +6,15 @@
     <atom:link href="https://minutofinancieros.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Guias cortas de educacion financiera sobre ahorro, presupuesto, deudas, habitos e inversion basica.</description>
     <language>es-AR</language>
-    <lastBuildDate>Wed, 29 Jul 2026 15:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 15:00:00 GMT</lastBuildDate>
+    <item>
+      <title>C&#xF3;mo hacer una auditor&#xED;a simple de gastos fijos</title>
+      <link>https://minutofinancieros.com/blog/auditoria-gastos-fijos/</link>
+      <guid isPermaLink="true">https://minutofinancieros.com/blog/auditoria-gastos-fijos/</guid>
+      <pubDate>Wed, 05 Aug 2026 15:00:00 GMT</pubDate>
+      <category>Presupuesto</category>
+      <description>Un m&#xE9;todo pr&#xE1;ctico para revisar gastos fijos, calcular su impacto anual y decidir qu&#xE9; mantener, reducir o cancelar.</description>
+    </item>
     <item>
       <title>Qu&#xE9; es liquidez y por qu&#xE9; importa</title>
       <link>https://minutofinancieros.com/blog/que-es-liquidez-y-por-que-importa/</link>
