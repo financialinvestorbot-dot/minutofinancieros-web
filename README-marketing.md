@@ -27,6 +27,30 @@ window.MinutoFinancierosConfig = {
 
 Referencia oficial: https://support.google.com/analytics/answer/9304153
 
+## Google Search Console
+
+Search Console quedo configurado para la propiedad:
+
+```text
+https://minutofinancieros.com/
+```
+
+Verificacion:
+
+```text
+Archivo HTML: /googlec9514ca55f3f0ddb.html
+```
+
+Importante: no eliminar ese archivo, porque sostiene la verificacion de propiedad.
+
+Sitemap enviado:
+
+```text
+https://minutofinancieros.com/sitemap.xml
+```
+
+Estado al alta: `Correcto`, con 55 paginas descubiertas. Los datos de rendimiento e indexacion pueden tardar al menos 24 horas en aparecer.
+
 ## Exclusion de trafico interno
 
 El sitio permite apagar GA4 en navegadores propios para que las pruebas internas no contaminen eventos futuros.
