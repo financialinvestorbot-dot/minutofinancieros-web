@@ -32,6 +32,37 @@ function rowsFor(ga4, label) {
   return report.table ? report.table.rows || [] : [];
 }
 
+function reportErrors(ga4) {
+  return (ga4.reports || [])
+    .filter((report) => report.error)
+    .map((report) => ({ label: report.label, error: report.error }));
+}
+
+function summarizeError(error) {
+  if (!error) {
+    return "";
+  }
+
+  try {
+    const parsed = JSON.parse(error);
+    const details = parsed.error || {};
+    const reason = (details.details || [])
+      .map((item) => item.reason)
+      .find(Boolean);
+    const activationUrl = (details.details || [])
+      .map((item) => item.metadata && item.metadata.activationUrl)
+      .find(Boolean);
+    return [
+      details.status || "",
+      reason || "",
+      details.message || "",
+      activationUrl ? `Activar: ${activationUrl}` : ""
+    ].filter(Boolean).join(" - ");
+  } catch (_) {
+    return error;
+  }
+}
+
 function number(value) {
   const parsed = Number(String(value || "0").replace(/[$,%\s]/g, "").replace(",", "."));
   return Number.isFinite(parsed) ? parsed : 0;
@@ -155,6 +186,9 @@ function main() {
   const amazonRows = rowsFor(ga4, "clicks-amazon");
   const newsletterRows = rowsFor(ga4, "newsletter");
   const amazon = amazonSummary(amazonPath);
+  const errors = reportErrors(ga4);
+  const hasGa4Errors = errors.length > 0;
+  const allGa4ReportsFailed = errors.length > 0 && errors.length === (ga4.reports || []).length;
 
   const newsletterSubmit = valueForEvent(newsletterRows, "newsletter_submit");
   const newsletterSuccess = valueForEvent(newsletterRows, "newsletter_success");
@@ -165,6 +199,10 @@ function main() {
 
   const recommendations = [];
 
+  if (allGa4ReportsFailed) {
+    recommendations.push("Habilitar Google Analytics Data API en el proyecto Google Cloud usado por la service account y volver a correr `npm run metrics:ga4`.");
+  }
+
   if (newsletterSubmit > 0 && newsletterSuccess === 0) {
     recommendations.push("Revisar newsletter: hay intentos de alta sin exitos registrados.");
   }
@@ -173,11 +211,11 @@ function main() {
     recommendations.push("Comparar links Amazon: GA4 registra clicks salientes, pero el export de Amazon no muestra clicks.");
   }
 
-  if (blogCtaClicks === 0 && pageRows.length > 0) {
+  if (!allGa4ReportsFailed && blogCtaClicks === 0 && pageRows.length > 0) {
     recommendations.push("Revisar CTAs del blog: hay trafico de paginas, pero no aparecen clicks de CTA.");
   }
 
-  if (leadMagnetViews === 0) {
+  if (!allGa4ReportsFailed && leadMagnetViews === 0) {
     recommendations.push("Dar mas visibilidad a la checklist financiera si el rango tiene trafico pero no registra vistas del lead magnet.");
   }
 
@@ -191,6 +229,15 @@ function main() {
     `Generado: ${generatedAt}`,
     `GA4 fuente: \`${ga4Path}\``,
     amazon ? `Amazon fuente: \`${amazon.file}\`` : "Amazon fuente: no incluida",
+    "",
+    "## Estado de datos",
+    "",
+    hasGa4Errors
+      ? markdownTable(
+        ["Consulta", "Estado"],
+        errors.map((item) => [item.label, summarizeError(item.error)])
+      )
+      : "GA4 respondio correctamente para todas las consultas configuradas.",
     "",
     "## Indicadores",
     "",
