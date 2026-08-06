@@ -63,6 +63,31 @@ function summarizeError(error) {
   }
 }
 
+function errorText(error) {
+  if (!error) {
+    return "";
+  }
+
+  try {
+    const parsed = JSON.parse(error);
+    return [
+      parsed.error && parsed.error.status,
+      parsed.error && parsed.error.message,
+      ...((parsed.error && parsed.error.details) || []).map((item) => [
+        item.reason,
+        item.metadata && item.metadata.service,
+        item.metadata && item.metadata.activationUrl
+      ].filter(Boolean).join(" "))
+    ].filter(Boolean).join(" ");
+  } catch (_) {
+    return error;
+  }
+}
+
+function hasErrorMatching(errors, pattern) {
+  return errors.some((item) => pattern.test(errorText(item.error)));
+}
+
 function number(value) {
   const parsed = Number(String(value || "0").replace(/[$,%\s]/g, "").replace(",", "."));
   return Number.isFinite(parsed) ? parsed : 0;
@@ -199,8 +224,12 @@ function main() {
 
   const recommendations = [];
 
-  if (allGa4ReportsFailed) {
+  if (allGa4ReportsFailed && hasErrorMatching(errors, /sufficient permissions|property/i)) {
+    recommendations.push("Agregar el email de la service account como usuario de la propiedad GA4 con rol de lectura y volver a correr `npm run metrics:ga4`.");
+  } else if (allGa4ReportsFailed && hasErrorMatching(errors, /SERVICE_DISABLED|analyticsdata\.googleapis\.com|activationUrl/i)) {
     recommendations.push("Habilitar Google Analytics Data API en el proyecto Google Cloud usado por la service account y volver a correr `npm run metrics:ga4`.");
+  } else if (allGa4ReportsFailed) {
+    recommendations.push("Revisar el error de GA4 en Estado de datos y volver a correr `npm run metrics:ga4` cuando este resuelto.");
   }
 
   if (newsletterSubmit > 0 && newsletterSuccess === 0) {
