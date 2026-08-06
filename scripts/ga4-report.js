@@ -196,6 +196,15 @@ async function main() {
     limit: 50
   }))));
 
+  reports.push(await optionalReport("clicks-amazon-basico", () => runReport(accessToken, propertyId, reportRequest({
+    startDate,
+    endDate,
+    dimensions: ["eventName"],
+    metrics: ["eventCount", "activeUsers"],
+    dimensionFilter: stringFilter("eventName", "click_amazon_resource"),
+    limit: 10
+  }))));
+
   reports.push(await optionalReport("newsletter", () => runReport(accessToken, propertyId, reportRequest({
     startDate,
     endDate,

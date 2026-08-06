@@ -133,6 +133,8 @@ Para que el reporte de Amazon pueda desglosar producto y etapa, registrar en GA4
 - `resource_stage`
 - `resource_category`
 
+Si estas dimensiones todavía no existen, `npm run metrics:ga4` igualmente guarda el conteo básico de `click_amazon_resource` en `clicks-amazon-basico`, pero no puede separar por producto, etapa o categoría.
+
 Para que el reporte de CTAs del blog pueda separar articulo, objetivo y ubicacion, registrar tambien:
 
 - `article_slug`

@@ -32,6 +32,11 @@ function rowsFor(ga4, label) {
   return report.table ? report.table.rows || [] : [];
 }
 
+function tableFor(ga4, label) {
+  const report = findReport(ga4, label);
+  return report.table || { headers: [], rows: [] };
+}
+
 function reportErrors(ga4) {
   return (ga4.reports || [])
     .filter((report) => report.error)
@@ -208,7 +213,9 @@ function main() {
   const eventRows = rowsFor(ga4, "eventos-principales");
   const pageRows = rowsFor(ga4, "paginas");
   const sourceRows = rowsFor(ga4, "fuentes");
-  const amazonRows = rowsFor(ga4, "clicks-amazon");
+  const amazonTable = tableFor(ga4, "clicks-amazon");
+  const amazonBasicRows = rowsFor(ga4, "clicks-amazon-basico");
+  const amazonRows = amazonTable.rows || [];
   const newsletterRows = rowsFor(ga4, "newsletter");
   const amazon = amazonSummary(amazonPath);
   const errors = reportErrors(ga4);
@@ -218,7 +225,9 @@ function main() {
   const newsletterSubmit = valueForEvent(newsletterRows, "newsletter_submit");
   const newsletterSuccess = valueForEvent(newsletterRows, "newsletter_success");
   const newsletterRate = newsletterSubmit ? (newsletterSuccess / newsletterSubmit) * 100 : 0;
-  const ga4AmazonClicks = sumColumn(amazonRows, 4);
+  const ga4AmazonClicks = amazonRows.length
+    ? sumColumn(amazonRows, 4)
+    : valueForEvent(amazonBasicRows, "click_amazon_resource") || valueForEvent(eventRows, "click_amazon_resource");
   const leadMagnetViews = valueForEvent(eventRows, "lead_magnet_view");
   const blogCtaClicks = valueForEvent(eventRows, "blog_cta_click");
 
@@ -238,6 +247,10 @@ function main() {
 
   if (ga4AmazonClicks > 0 && amazon && amazon.clicks === 0) {
     recommendations.push("Comparar links Amazon: GA4 registra clicks salientes, pero el export de Amazon no muestra clicks.");
+  }
+
+  if (!allGa4ReportsFailed && ga4AmazonClicks > 0 && !amazonRows.length) {
+    recommendations.push("Registrar `resource_name`, `resource_stage` y `resource_category` como dimensiones personalizadas de evento en GA4 para desglosar clicks Amazon por recurso.");
   }
 
   if (!allGa4ReportsFailed && blogCtaClicks === 0 && pageRows.length > 0) {
@@ -300,7 +313,9 @@ function main() {
     "",
     "## Clicks Amazon por recurso",
     "",
-    markdownTable(["Evento", "Recurso", "Etapa", "Categoria", "Clicks", "Usuarios"], amazonRows.slice(0, 10)),
+    amazonRows.length
+      ? markdownTable(amazonTable.headers, amazonRows.slice(0, 10))
+      : markdownTable(["Evento", "Clicks", "Usuarios"], amazonBasicRows.slice(0, 10)),
     "",
     "## Recomendaciones",
     "",
