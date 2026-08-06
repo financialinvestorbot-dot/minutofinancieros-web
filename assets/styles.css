@@ -1078,13 +1078,22 @@ h1 {
 
 .checklist-page {
   width: 100%;
-  padding: clamp(42px, 6vw, 84px) clamp(20px, 6vw, 92px);
+  padding: clamp(34px, 5vw, 72px) clamp(20px, 6vw, 92px);
   background: linear-gradient(180deg, var(--surface), var(--white));
 }
 
 .checklist-header {
-  width: min(100%, 1040px);
-  margin: 0 auto 34px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+  gap: 28px;
+  align-items: center;
+  width: min(100%, 1120px);
+  margin: 0 auto 24px;
+  padding: clamp(28px, 4vw, 44px);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 18px 44px rgba(8, 24, 43, 0.08);
 }
 
 .checklist-header h1 {
@@ -1101,16 +1110,65 @@ h1 {
   font-size: 1.08rem;
 }
 
+.checklist-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
 .print-button {
   margin-top: 8px;
+}
+
+.checklist-summary {
+  display: grid;
+  gap: 12px;
+  padding: 22px;
+  color: var(--white);
+  background: var(--navy-950);
+  border-radius: 8px;
+}
+
+.checklist-summary strong {
+  font-size: 1.1rem;
+}
+
+.checklist-summary span {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.checklist-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  width: min(100%, 1120px);
+  margin: 0 auto 24px;
+}
+
+.checklist-benefits div {
+  display: grid;
+  gap: 6px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.checklist-benefits strong {
+  color: var(--navy-900);
+}
+
+.checklist-benefits span {
+  color: var(--muted);
 }
 
 .checklist-sheet {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
-  width: min(100%, 1040px);
-  max-width: 1040px;
+  width: min(100%, 1120px);
+  max-width: 1120px;
   margin: 0 auto;
 }
 
@@ -1159,8 +1217,8 @@ h1 {
 }
 
 .checklist-cta {
-  width: min(100%, 1040px);
-  max-width: 1040px;
+  width: min(100%, 1120px);
+  max-width: 1120px;
   margin: 26px auto 0;
 }
 
@@ -1187,13 +1245,15 @@ h1 {
   .text-columns,
   .topic-grid,
   .resource-grid,
-  .resource-stage-grid,
-  .resource-paths,
-  .article-grid,
-  .story-section,
-  .lead-magnet-section,
-  .newsletter-hero,
-  .checklist-sheet {
+    .resource-stage-grid,
+    .resource-paths,
+    .article-grid,
+    .story-section,
+    .lead-magnet-section,
+    .newsletter-hero,
+    .checklist-header,
+    .checklist-benefits,
+    .checklist-sheet {
     grid-template-columns: 1fr;
   }
 
@@ -1234,6 +1294,14 @@ h1 {
   }
 
   .newsletter-form button {
+    width: 100%;
+  }
+
+  .checklist-header {
+    padding: 24px 18px;
+  }
+
+  .checklist-actions .button {
     width: 100%;
   }
 }

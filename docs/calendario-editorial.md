@@ -116,7 +116,7 @@ Reordenado con el primer reporte generado por OpenAI (`gpt-5.6-luna`) el 2026-08
 | 6 | Que es liquidez y por que importa | Inversion basica | `/blog/separar-dinero-corto-largo-plazo/` | Publicado 2026-07-29 |
 | 7 | Como hacer una auditoria simple de gastos fijos | Presupuesto | `/checklist-financiero/` | Publicado 2026-08-05 |
 | 8 | Cuando conviene cancelar una suscripcion anual | Ahorro | `/newsletter/` | Publicado 2026-08-05 |
-| 9 | Como preparar tus finanzas para vacaciones | Presupuesto | `/blog/preparar-mes-caro-sin-endeudarte/` | Pendiente |
+| 9 | Como preparar tus finanzas para vacaciones | Presupuesto | `/blog/preparar-mes-caro-sin-endeudarte/` | Publicado 2026-08-06 |
 | 10 | Senales de que estas tomando decisiones por miedo | Productividad financiera | `/blog/errores-invertir-por-ansiedad/` | Pendiente |
 
 ## Plantilla rapida
